@@ -1,0 +1,161 @@
+advertiser_id,advertiser_name,vertical,tier,market,agency_id,csm_id,billing_type,account_type
+ADV001,Red Apparel,Retail,Mid-Market,US,AG01,CSM6,invoice,client
+ADV002,Swift Market,Retail,Mid-Market,CA,AG02,CSM3,invoice,client
+ADV003,Juniper Trips,Travel,Mid-Market,CA,AG04,CSM2,invoice,client
+ADV004,Cedar Trips,Travel,Mid-Market,CA,AG05,CSM6,invoice,client
+ADV005,Bright Foods,CPG,Mid-Market,CA,AG05,CSM2,invoice,client
+ADV006,Lake Music,Entertainment,Mid-Market,US,AG06,CSM6,invoice,client
+ADV007,River Lending,Financial Services,Enterprise,CA,DIRECT,CSM5,invoice,client
+ADV008,Silver Live,Entertainment,Enterprise,CA,DIRECT,CSM1,invoice,client
+ADV009,Silver Beverage Co.,CPG,Mid-Market,US,AG05,CSM3,invoice,client
+ADV010,Prairie Connect,Telecom,Enterprise,US,DIRECT,CSM4,invoice,client
+ADV011,Iron Insurance,Financial Services,Mid-Market,CA,DIRECT,CSM3,card,client
+ADV012,Summit Play,Gaming,Mid-Market,CA,AG06,CSM2,invoice,client
+ADV013,Metro Pictures,Entertainment,Mid-Market,US,AG05,CSM3,invoice,client
+ADV014,Willow Games,Gaming,Enterprise,CA,AG05,CSM5,invoice,client
+ADV015,Oak Dealers,Auto,Mid-Market,US,DIRECT,CSM5,card,client
+ADV016,True Networks,Telecom,Mid-Market,US,DIRECT,CSM3,invoice,client
+ADV017,Echo Motors,Auto,Mid-Market,US,AG05,CSM4,invoice,client
+ADV018,Coastal Play,Gaming,Enterprise,US,AG03,CSM6,invoice,client
+ADV019,Atlas Getaways,Travel,Mid-Market,CA,DIRECT,CSM2,invoice,client
+ADV020,Summit Motors,Auto,Mid-Market,US,AG07,CSM3,invoice,client
+ADV021,Willow Home,Retail,Mid-Market,CA,DIRECT,CSM3,invoice,client
+ADV022,Echo Studios,Gaming,Mid-Market,CA,AG05,CSM6,invoice,client
+ADV023,Atlas Media,Entertainment,Enterprise,US,AG07,CSM1,invoice,client
+ADV024,Bright Labs,Gaming,Enterprise,CA,DIRECT,CSM5,invoice,client
+ADV025,Pine Insurance,Financial Services,Enterprise,CA,AG01,CSM5,invoice,client
+ADV026,Lake Media,Entertainment,Mid-Market,US,DIRECT,CSM6,card,client
+ADV027,North Pictures,Entertainment,Mid-Market,US,AG07,CSM2,invoice,client
+ADV028,Cedar Pictures,Entertainment,Mid-Market,US,AG03,CSM3,invoice,client
+ADV029,Prairie EV,Auto,Mid-Market,CA,AG05,CSM6,invoice,client
+ADV030,Metro Lending,Financial Services,Mid-Market,US,AG02,CSM4,invoice,client
+ADV031,Atlas Interactive,Gaming,Enterprise,CA,DIRECT,CSM3,invoice,client
+ADV032,Iron Tires,Auto,Mid-Market,CA,DIRECT,CSM3,card,client
+ADV033,Metro Apparel,Retail,Mid-Market,CA,AG07,CSM3,invoice,client
+ADV034,Aurora Play,Gaming,Enterprise,US,AG02,CSM1,invoice,client
+ADV035,Cedar Live,Entertainment,Mid-Market,US,AG02,CSM4,invoice,client
+ADV036,River Networks,Telecom,Mid-Market,CA,AG07,CSM1,invoice,client
+ADV037,Summit Market,Retail,Mid-Market,CA,DIRECT,CSM6,invoice,client
+ADV038,Summit Foods,CPG,Mid-Market,US,AG03,CSM6,invoice,client
+ADV039,Lake Outfitters,Retail,Mid-Market,US,DIRECT,CSM3,invoice,client
+ADV040,Blue Auto Group,Auto,Mid-Market,US,AG07,CSM4,invoice,client
+ADV041,Cedar Goods,Retail,Mid-Market,CA,AG06,CSM5,invoice,client
+ADV042,Harbor Beverage Co.,CPG,Mid-Market,CA,AG07,CSM5,invoice,client
+ADV043,Blue Studios,Gaming,Mid-Market,CA,AG01,CSM2,invoice,client
+ADV044,Summit Lending,Financial Services,Mid-Market,CA,DIRECT,CSM1,card,client
+ADV045,Swift Bank,Financial Services,Mid-Market,US,DIRECT,CSM3,card,client
+ADV046,Granite Telecom,Telecom,Enterprise,CA,AG04,CSM2,invoice,client
+ADV047,Swift Credit Union,Financial Services,Enterprise,US,AG05,CSM2,invoice,client
+ADV048,Maple Beverage Co.,CPG,Enterprise,CA,DIRECT,CSM3,invoice,client
+ADV049,Maple & Main Grocers,Retail,Enterprise,CA,AG02,CSM1,invoice,client
+ADV050,Harbor Foods,CPG,Enterprise,CA,AG05,CSM5,invoice,client
+ADV051,Summit Snacks,CPG,Enterprise,CA,DIRECT,CSM2,invoice,client
+ADV052,River Games,Gaming,Enterprise,CA,DIRECT,CSM5,invoice,client
+ADV053,Willow Foods,CPG,Mid-Market,US,AG05,CSM3,invoice,client
+ADV054,Lake Lending,Financial Services,Mid-Market,US,AG01,CSM1,invoice,client
+ADV055,Oak Arcade,Gaming,Mid-Market,US,AG07,CSM5,invoice,client
+ADV056,Atlas Studios,Gaming,Mid-Market,CA,AG04,CSM4,invoice,client
+ADV057,Lumen Arcade,Gaming,Mid-Market,US,AG07,CSM2,invoice,client
+ADV058,Maple Supply,Retail,Mid-Market,US,AG05,CSM3,invoice,client
+ADV059,Lake Cruises,Travel,Enterprise,CA,AG01,CSM6,invoice,client
+ADV060,Metro Home,Retail,Mid-Market,US,AG06,CSM5,invoice,client
+ADV061,Union Wireless,Telecom,Mid-Market,US,AG07,CSM3,invoice,client
+ADV062,Blue Brands,CPG,Mid-Market,CA,AG05,CSM3,invoice,client
+ADV063,Golden Outfitters,Retail,Mid-Market,US,DIRECT,CSM3,invoice,client
+ADV064,Aurora Home,Retail,Mid-Market,CA,AG05,CSM5,invoice,client
+ADV065,Summit Home,Retail,Mid-Market,US,AG05,CSM5,invoice,client
+ADV066,Pine Pictures,Entertainment,Mid-Market,CA,DIRECT,CSM2,invoice,client
+ADV067,True Brands,CPG,Mid-Market,US,AG02,CSM1,invoice,client
+ADV068,Lumen Telecom,Telecom,Mid-Market,US,AG04,CSM4,invoice,client
+ADV069,Lumen Supply,Retail,Mid-Market,US,AG01,CSM5,invoice,client
+ADV070,Union Games,Gaming,Mid-Market,CA,DIRECT,CSM5,invoice,client
+ADV071,Pine Mobile,Telecom,Mid-Market,CA,AG04,CSM6,invoice,client
+ADV072,Red Bank,Financial Services,Mid-Market,US,DIRECT,CSM4,invoice,client
+ADV073,Cedar Pantry,CPG,Mid-Market,CA,AG05,CSM2,invoice,client
+ADV074,Copper Games,Gaming,Enterprise,US,AG04,CSM4,invoice,client
+ADV075,Aurora Arcade,Gaming,Mid-Market,US,DIRECT,CSM6,invoice,client
+ADV076,North Supply,Retail,Enterprise,CA,DIRECT,CSM2,invoice,client
+ADV077,Swift Records,Entertainment,Mid-Market,US,AG01,CSM2,invoice,client
+ADV078,Lake Arcade,Gaming,Enterprise,CA,AG06,CSM3,invoice,client
+ADV079,Juniper Wireless,Telecom,Mid-Market,CA,AG05,CSM1,invoice,client
+ADV080,Echo Brands,CPG,Mid-Market,US,AG06,CSM1,invoice,client
+ADV081,Summit Networks,Telecom,Enterprise,CA,AG04,CSM3,invoice,client
+ADV082,Maple EV,Auto,Mid-Market,CA,DIRECT,CSM5,card,client
+ADV083,Prairie Cruises,Travel,Mid-Market,CA,AG04,CSM6,invoice,client
+ADV084,Metro Labs,Gaming,Enterprise,US,AG05,CSM4,invoice,client
+ADV085,Coastal Pantry,CPG,Mid-Market,US,AG02,CSM1,invoice,client
+ADV086,Lake Studios,Gaming,Mid-Market,CA,AG03,CSM6,invoice,client
+ADV087,Coastal Live,Entertainment,Mid-Market,CA,DIRECT,CSM5,invoice,client
+ADV088,Oak Studios,Gaming,Mid-Market,US,AG04,CSM1,invoice,client
+ADV089,Lumen Pictures,Entertainment,Mid-Market,CA,DIRECT,CSM5,invoice,client
+ADV090,Atlas Supply,Retail,Mid-Market,US,AG06,CSM1,invoice,client
+ADV091,Aurora EV,Auto,Enterprise,US,AG04,CSM4,invoice,client
+ADV092,Golden Records,Entertainment,Enterprise,US,AG03,CSM5,invoice,client
+ADV093,Union Connect,Telecom,Mid-Market,CA,DIRECT,CSM5,invoice,client
+ADV094,Bright Networks,Telecom,Enterprise,US,AG05,CSM2,invoice,client
+ADV095,Pine Wireless,Telecom,Mid-Market,US,AG03,CSM2,invoice,client
+ADV096,True Supply,Retail,Mid-Market,CA,DIRECT,CSM5,card,client
+ADV097,Polar Beverage Co.,CPG,Enterprise,US,DIRECT,CSM3,invoice,client
+ADV098,Union Arcade,Gaming,Mid-Market,CA,DIRECT,CSM1,card,client
+ADV099,Bright Mobile,Telecom,Mid-Market,CA,AG02,CSM3,invoice,client
+ADV100,Juniper Mobile,Telecom,Enterprise,CA,AG04,CSM6,invoice,client
+ADV101,Bright Insurance,Financial Services,Mid-Market,US,AG03,CSM3,invoice,client
+ADV102,North Air,Travel,Mid-Market,US,AG03,CSM1,invoice,client
+ADV103,Cedar Snacks,CPG,Mid-Market,US,DIRECT,CSM4,card,client
+ADV104,Metro Networks,Telecom,Mid-Market,US,DIRECT,CSM2,card,client
+ADV105,Union Studios,Gaming,Mid-Market,US,DIRECT,CSM5,invoice,client
+ADV106,Iron Records,Entertainment,Mid-Market,US,AG06,CSM6,invoice,client
+ADV107,Copper Pay,Financial Services,Mid-Market,US,AG07,CSM5,invoice,client
+ADV108,Cedar Supply,Retail,Enterprise,US,AG07,CSM6,invoice,client
+ADV109,Blue Interactive,Gaming,Enterprise,US,AG07,CSM1,invoice,client
+ADV110,Atlas Records,Entertainment,Enterprise,CA,AG04,CSM6,invoice,client
+ADV111,Bright Apparel,Retail,Mid-Market,US,DIRECT,CSM2,invoice,client
+ADV112,Atlas Pictures,Entertainment,Mid-Market,CA,AG07,CSM2,invoice,client
+ADV113,Harbor Brands,CPG,Mid-Market,US,AG02,CSM4,invoice,client
+ADV114,Summit Pantry,CPG,Mid-Market,CA,AG03,CSM6,invoice,client
+ADV115,Union Play,Gaming,Mid-Market,US,AG05,CSM2,invoice,client
+ADV116,Red Trips,Travel,Mid-Market,CA,DIRECT,CSM1,card,client
+ADV117,Copper Motors,Auto,Mid-Market,US,AG03,CSM3,invoice,client
+ADV118,Granite Goods,Retail,Mid-Market,CA,AG05,CSM2,invoice,client
+ADV119,Maple Auto Group,Auto,Enterprise,US,AG04,CSM6,invoice,client
+ADV120,True Beverage Co.,CPG,Enterprise,CA,DIRECT,CSM6,invoice,client
+ADV121,Willow Networks,Telecom,Mid-Market,US,AG03,CSM4,invoice,client
+ADV122,Willow Pantry,CPG,Enterprise,US,AG06,CSM5,invoice,client
+ADV123,Red Market,Retail,Enterprise,US,AG02,CSM3,invoice,client
+ADV124,Willow Lending,Financial Services,Enterprise,US,AG06,CSM5,invoice,client
+ADV125,Maple Naturals,CPG,Mid-Market,CA,DIRECT,CSM4,card,client
+ADV126,Oak Live,Entertainment,Mid-Market,CA,DIRECT,CSM4,card,client
+ADV127,Copper Dealers,Auto,Mid-Market,CA,DIRECT,CSM4,invoice,client
+ADV128,Copper Streaming,Entertainment,Mid-Market,US,DIRECT,CSM3,card,client
+ADV129,Red Networks,Telecom,Mid-Market,CA,AG05,CSM3,invoice,client
+ADV130,Willow Apparel,Retail,Mid-Market,US,AG06,CSM2,invoice,client
+ADV131,Metro Pantry,CPG,Enterprise,CA,DIRECT,CSM6,invoice,client
+ADV132,River Auto Group,Auto,Mid-Market,CA,AG05,CSM5,invoice,client
+ADV133,Lumen Outfitters,Retail,Mid-Market,CA,AG01,CSM3,invoice,client
+ADV134,Echo Tires,Auto,Mid-Market,CA,AG07,CSM4,invoice,client
+ADV135,North Live,Entertainment,Mid-Market,CA,DIRECT,CSM2,invoice,client
+ADV136,Blue Cruises,Travel,Mid-Market,CA,AG07,CSM3,invoice,client
+ADV137,Union Labs,Gaming,Enterprise,CA,AG03,CSM4,invoice,client
+ADV138,Iron Dealers,Auto,Enterprise,CA,AG01,CSM6,invoice,client
+ADV139,Swift Pictures,Entertainment,Mid-Market,CA,DIRECT,CSM2,invoice,client
+ADV140,Lumen Networks,Telecom,Mid-Market,US,AG04,CSM1,invoice,client
+ADV141,Lumen Mobile,Telecom,Mid-Market,CA,AG05,CSM2,invoice,client
+ADV142,Pine Beverage Co.,CPG,Mid-Market,US,DIRECT,CSM3,invoice,client
+ADV143,River Play,Gaming,Enterprise,US,DIRECT,CSM2,invoice,client
+ADV144,Red Labs,Gaming,Mid-Market,CA,AG03,CSM2,invoice,client
+ADV145,Echo Beverage Co.,CPG,Enterprise,CA,AG02,CSM1,invoice,client
+ADV146,Granite Outfitters,Retail,Enterprise,US,DIRECT,CSM1,invoice,client
+ADV147,Granite Air,Travel,Enterprise,CA,AG04,CSM6,invoice,client
+ADV148,Swift Auto Group,Auto,Enterprise,CA,AG02,CSM3,invoice,client
+ADV149,Coastal Rail,Travel,Mid-Market,US,AG03,CSM6,invoice,client
+ADV150,Aurora Hotels,Travel,Mid-Market,CA,AG01,CSM5,invoice,client
+ADV151,Metro Outfitters,Retail,Mid-Market,US,AG02,CSM2,invoice,client
+ADV152,Silver Market,Retail,Enterprise,CA,AG03,CSM6,invoice,client
+ADV153,QA Sandbox 01,Financial Services,Mid-Market,US,DIRECT,CSM5,card,internal_test
+ADV154,QA Sandbox 02,Telecom,Mid-Market,CA,DIRECT,CSM4,card,internal_test
+ADV155,QA Sandbox 03,CPG,Mid-Market,CA,DIRECT,CSM3,card,internal_test
+ADV156,QA Sandbox 04,Telecom,Mid-Market,US,DIRECT,CSM3,card,internal_test
+ADV157,QA Sandbox 05,Gaming,Mid-Market,CA,DIRECT,CSM1,card,internal_test
+ADV158,QA Sandbox 06,Travel,Mid-Market,US,DIRECT,CSM6,card,internal_test
+ADV159,QA Sandbox 07,Telecom,Mid-Market,US,DIRECT,CSM3,card,internal_test
+ADV160,QA Sandbox 08,CPG,Mid-Market,CA,DIRECT,CSM2,card,internal_test

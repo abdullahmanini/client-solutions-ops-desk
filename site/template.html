@@ -1,0 +1,722 @@
+<title>Client Solutions Ops Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A reporting desk for a short-video ad platform's North America Client Solutions team, on synthetic data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a vertical, snap-scrolling feed of "clips" (one finding each) in a phone-shaped stage,
+   side nav on wide screens, action rail on every clip. Desk mode turns the feed into a scannable grid.
+   Single dark look on purpose: it is a video feed. */
+:root {
+  --bg: #08080d;          /* stage surround */
+  --clip: #111118;        /* clip surface */
+  --raise: #1b1b25;       /* chips, sheets */
+  --line: #2a2a37;
+  --ink: #f3f3f7;
+  --muted: #9b9bb0;
+  --cyan: #25f0e8;        /* clean / client data */
+  --pink: #ff2d6f;        /* raw / problem */
+  --good: #3ddc97;
+  --warn: #ffb347;
+  --bad: #ff5470;
+  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.5 var(--body); -webkit-font-smoothing: antialiased; overflow: hidden; }
+button { font: inherit; color: inherit; }
+a { color: var(--cyan); }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; border-radius: 6px; }
+
+.app { height: 100%; display: grid; grid-template-columns: 236px minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+@media (max-width: 900px) { .app { grid-template-columns: minmax(0, 1fr); } .side { display: none !important; } }
+
+/* side nav */
+.side { display: flex; flex-direction: column; gap: 22px; padding-block: 22px; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: 16px; border-right: 1px solid var(--line); overflow-y: auto; }
+.logo { display: flex; align-items: center; gap: 10px; font: 800 17px/1 var(--display); letter-spacing: -.01em; text-decoration: none; color: var(--ink); }
+.logo svg { flex: none; }
+.nav { display: flex; flex-direction: column; gap: 2px; }
+.nav button { all: unset; cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 10px; font-weight: 600; color: var(--muted); }
+.nav button:hover { background: var(--raise); color: var(--ink); }
+.nav button[aria-current="true"] { color: var(--ink); background: var(--raise); }
+.nav button[aria-current="true"] .dot { background: var(--pink); box-shadow: -2px 0 0 var(--cyan); }
+.nav .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); flex: none; }
+.side small { color: var(--muted); font-size: 12.5px; line-height: 1.5; }
+.side .who { border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 6px; }
+.side .who b { font-size: 13.5px; }
+
+/* main column */
+.main { position: relative; height: 100%; min-width: 0; min-height: 0; }
+.topbar { position: absolute; z-index: 20; top: 0; left: 0; right: 0; display: flex; justify-content: center; gap: 22px; padding-top: 14px; pointer-events: none; }
+.topbar button { all: unset; pointer-events: auto; cursor: pointer; font-weight: 700; font-size: 15px; color: rgba(243,243,247,.6); padding: 4px 2px; position: relative; text-shadow: 0 1px 6px rgba(0,0,0,.6); }
+.topbar button[aria-pressed="true"] { color: var(--ink); }
+.topbar button[aria-pressed="true"]::after { content: ""; position: absolute; left: 25%; right: 25%; bottom: -3px; height: 3px; border-radius: 2px; background: var(--ink); }
+.steps { position: absolute; z-index: 20; right: max(10px, env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%); display: grid; gap: 7px; }
+.steps button { all: unset; cursor: pointer; width: 6px; height: 6px; border-radius: 3px; background: var(--line); transition: height .25s, background .25s; }
+.steps button[aria-current="true"] { height: 22px; background: linear-gradient(var(--cyan), var(--pink)); }
+@media (max-width: 560px) { .steps { display: none; } }
+
+.feed { height: 100%; overflow-y: auto; scroll-snap-type: y mandatory; scroll-behavior: smooth; overscroll-behavior: contain; scrollbar-width: none; }
+.feed::-webkit-scrollbar { display: none; }
+.slot { min-height: 100%; scroll-snap-align: start; display: grid; place-items: center; padding-block: 12px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (max-width: 560px) { .slot { padding: 0; } }
+
+/* a clip */
+.clip { position: relative; width: min(100%, 470px); min-height: min(calc(100vh - 24px), 900px); border-radius: 18px; background: var(--clip); overflow: hidden; isolation: isolate; display: flex; flex-direction: column; box-shadow: 0 30px 80px -30px rgba(0,0,0,.8); }
+@media (max-width: 560px) { .clip { width: 100%; min-height: 100vh; min-height: 100dvh; border-radius: 0; } }
+.clip::before, .clip::after { content: ""; position: absolute; z-index: -1; width: 70%; aspect-ratio: 1; border-radius: 50%; filter: blur(60px); opacity: .18; }
+.clip::before { background: var(--cyan); top: -20%; left: -25%; }
+.clip::after { background: var(--pink); bottom: 5%; right: -30%; }
+.clip.live::before { animation: drift 14s ease-in-out infinite alternate; }
+.clip.live::after { animation: drift 17s ease-in-out infinite alternate-reverse; }
+@keyframes drift { to { transform: translate(18%, 12%) scale(1.15); } }
+
+.body { flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 62px 68px 14px 20px; min-width: 0; }
+.kicker { font: 600 11.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+.kicker i { font-style: normal; color: var(--pink); }
+h1, h2 { font-family: var(--display); font-weight: 800; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(30px, 8.4vw, 42px); line-height: 1.02; }
+h2 { font-size: clamp(22px, 6vw, 27px); line-height: 1.08; }
+.glitch { text-shadow: -2px 0 var(--cyan), 2px 0 var(--pink); }
+.clip.play .glitch { animation: split 1.1s steps(2, end) 1; }
+@keyframes split { 0% { text-shadow: -9px 0 var(--cyan), 9px 0 var(--pink); } 35% { text-shadow: 6px 0 var(--cyan), -5px 0 var(--pink); } 70% { text-shadow: -3px 0 var(--cyan), 3px 0 var(--pink); } 100% { text-shadow: -2px 0 var(--cyan), 2px 0 var(--pink); } }
+.lead { margin: 0; color: #d6d6e2; font-size: 15px; max-width: 46ch; }
+.lead b { color: var(--ink); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* caption + sound line (bottom-left, like a video caption) */
+.cap { padding: 0 72px 18px 20px; display: grid; gap: 6px; font-size: 13.5px; }
+.cap .handle { font-weight: 700; display: flex; gap: 6px; align-items: center; }
+.cap .handle span { font-weight: 500; color: var(--muted); }
+.cap .tags { color: #cfcfe0; }
+.cap .tags em { font-style: normal; font-weight: 700; color: var(--ink); }
+.sound { display: flex; align-items: center; gap: 8px; color: #cfcfe0; font: 400 12px/1 var(--mono); overflow: hidden; white-space: nowrap; }
+.sound .track { overflow: hidden; flex: 1; min-width: 0; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.sound .track span { display: inline-block; padding-left: 8%; }
+.clip.live .sound .track span { animation: marquee 12s linear infinite; }
+@keyframes marquee { to { transform: translateX(-100%); } }
+
+/* action rail */
+.rail { position: absolute; right: 10px; bottom: 76px; display: grid; gap: 16px; justify-items: center; z-index: 3; }
+.rail button { all: unset; cursor: pointer; display: grid; justify-items: center; gap: 4px; font: 600 11px/1 var(--body); color: var(--ink); text-shadow: 0 1px 4px rgba(0,0,0,.6); }
+.rail .ic { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.1); backdrop-filter: blur(6px); transition: transform .15s; }
+.rail button:hover .ic { transform: scale(1.08); }
+.rail button:focus-visible .ic { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.rail button[aria-pressed="true"] svg { fill: var(--pink); stroke: var(--pink); }
+.rail button[aria-pressed="true"] .ic { animation: pop .35s; }
+@keyframes pop { 50% { transform: scale(1.25); } }
+.disc { width: 40px; height: 40px; border-radius: 50%; background: conic-gradient(var(--cyan), var(--pink), var(--cyan)); display: grid; place-items: center; }
+.disc::after { content: ""; width: 16px; height: 16px; border-radius: 50%; background: var(--clip); }
+.clip.live .disc { animation: spin 5s linear infinite; }
+@keyframes spin { to { transform: rotate(1turn); } }
+
+/* chips + toggles */
+.toggle { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; font-size: 13.5px; font-weight: 600; }
+.toggle .sw { width: 40px; height: 22px; border-radius: 11px; background: var(--line); position: relative; transition: background .2s; flex: none; }
+.toggle .sw::after { content: ""; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; border-radius: 50%; background: var(--ink); transition: transform .2s; }
+.toggle[aria-pressed="true"] .sw { background: var(--pink); }
+.toggle[aria-pressed="true"] .sw::after { transform: translateX(18px); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { all: unset; cursor: pointer; padding: 6px 11px; border-radius: 999px; background: var(--raise); font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12.5px; color: var(--muted); }
+.legend i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+
+/* stats */
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.stat { background: rgba(255,255,255,.05); border-radius: 12px; padding: 12px; display: grid; gap: 4px; min-width: 0; }
+.stat b { font: 700 clamp(18px, 5vw, 22px)/1.05 var(--mono); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; color: var(--muted); }
+.stat .up { color: var(--good); font: 600 11.5px/1 var(--mono); }
+
+/* bars */
+.bars { display: grid; gap: 11px; }
+.bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; font-size: 13.5px; }
+.bar .lab { font-weight: 600; min-width: 0; }
+.bar .val { font: 600 13px/1.4 var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
+.bar .val small { color: var(--muted); font-weight: 400; }
+.track2 { grid-column: 1 / -1; height: 10px; border-radius: 5px; background: rgba(255,255,255,.07); overflow: hidden; }
+.fill { height: 100%; border-radius: 5px; background: linear-gradient(90deg, var(--cyan), #6ff7f2); transform-origin: left; transition: width .6s cubic-bezier(.2,.8,.2,1); }
+.fill.hot { background: linear-gradient(90deg, var(--pink), #ff7aa0); }
+.clip.play .fill { animation: grow .9s cubic-bezier(.2,.8,.2,1) both; }
+.clip.play .bar:nth-child(2) .fill { animation-delay: .08s; } .clip.play .bar:nth-child(3) .fill { animation-delay: .16s; }
+.clip.play .bar:nth-child(4) .fill { animation-delay: .24s; } .clip.play .bar:nth-child(5) .fill { animation-delay: .32s; }
+.clip.play .bar:nth-child(6) .fill { animation-delay: .4s; }
+@keyframes grow { from { transform: scaleX(0); } }
+
+/* svg charts */
+svg.chart { width: 100%; height: auto; display: block; overflow: visible; }
+.chart text { fill: var(--muted); font: 10.5px var(--mono); }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .ln { fill: none; stroke-width: 2.4; stroke-linejoin: round; stroke-linecap: round; }
+.clip.play .chart .ln { stroke-dasharray: 1400; animation: draw 1.6s ease-out both; }
+@keyframes draw { from { stroke-dashoffset: 1400; } to { stroke-dashoffset: 0; } }
+.clip.play .chart .pin { animation: rise .5s 1.2s both; }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } }
+.clip.play .dots circle { animation: drop .5s both; }
+@keyframes drop { from { opacity: 0; transform: translateY(-14px); } }
+
+/* exception list */
+.queue { display: grid; gap: 8px; }
+.exc { display: grid; grid-template-columns: 4px minmax(0, 1fr) auto; gap: 2px 12px; background: rgba(255,255,255,.05); border-radius: 10px; padding: 10px 12px 10px 0; font-size: 13px; }
+.exc::before { content: ""; grid-row: 1 / span 2; border-radius: 0 3px 3px 0; background: var(--sev); }
+.exc b { min-width: 0; overflow-wrap: anywhere; }
+.exc .amt { font: 600 12.5px/1.4 var(--mono); text-align: right; }
+.exc small { grid-column: 2 / -1; color: var(--muted); font-size: 12px; }
+.clip.play .exc { animation: slide .45s both; }
+@keyframes slide { from { opacity: 0; transform: translateX(16px); } }
+.sevH { --sev: var(--bad); } .sevM { --sev: var(--warn); } .sevL { --sev: #7c7cff; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font: 600 10.5px/1.5 var(--mono); letter-spacing: .03em; text-transform: uppercase; }
+.pill.H { background: color-mix(in srgb, var(--bad) 22%, transparent); color: #ff9aac; }
+.pill.M { background: color-mix(in srgb, var(--warn) 22%, transparent); color: #ffd08f; }
+.pill.L { background: color-mix(in srgb, #7c7cff 25%, transparent); color: #c4c4ff; }
+.pill.ok { background: color-mix(in srgb, var(--good) 20%, transparent); color: #9ff0cb; }
+
+/* flip cards */
+.flips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.flip { all: unset; cursor: pointer; perspective: 800px; display: block; }
+.flip .in { display: grid; height: 100%; transition: transform .5s; transform-style: preserve-3d; }
+.flip[aria-pressed="true"] .in { transform: rotateY(180deg); }
+.flip .f, .flip .b { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 12px; padding: 12px; display: grid; align-content: start; gap: 6px; }
+.flip .f { background: rgba(255,255,255,.06); }
+.flip .b { background: color-mix(in srgb, var(--pink) 16%, var(--clip)); transform: rotateY(180deg); font-size: 12.5px; line-height: 1.4; }
+.flip .f b { font: 800 16px/1 var(--display); }
+.flip .f .num { font-size: 19px; font-weight: 600; color: var(--cyan); }
+.flip .f small, .flip .b small { color: var(--muted); font-size: 11.5px; }
+.flip .b small { color: #ffc2d1; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 10.5px; }
+.flip.wide { grid-column: 1 / -1; }
+
+/* tests */
+.tests { display: grid; gap: 4px; font-size: 12.5px; }
+.t { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 5px 0; border-bottom: 1px solid var(--line); }
+.t code { font: 600 11px var(--mono); color: var(--muted); }
+.clip.play .t { animation: slide .35s both; }
+
+/* sheet (SQL drawer) */
+.sheet { position: fixed; inset: auto 0 0 0; z-index: 50; display: flex; justify-content: center; pointer-events: none; }
+.sheet .panel { pointer-events: auto; width: min(100%, 560px); max-height: 72vh; overflow: auto; background: var(--raise); border-radius: 18px 18px 0 0; padding: 18px max(18px, env(safe-area-inset-right, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px)); box-shadow: 0 -20px 60px rgba(0,0,0,.6); transform: translateY(105%); transition: transform .3s cubic-bezier(.2,.8,.2,1); display: grid; gap: 12px; }
+.sheet.open .panel { transform: none; }
+.sheet h3 { margin: 0; font: 700 15px/1.2 var(--display); }
+.sheet pre { margin: 0; background: var(--bg); border-radius: 10px; padding: 12px; font: 12px/1.55 var(--mono); color: #d9e6ff; overflow-x: auto; }
+.sheet p { margin: 0; color: #d6d6e2; font-size: 13.5px; }
+.sheet .x { all: unset; cursor: pointer; justify-self: end; font-weight: 700; font-size: 13px; color: var(--muted); }
+.scrim { position: fixed; inset: 0; z-index: 40; background: rgba(0,0,0,.45); opacity: 0; pointer-events: none; transition: opacity .25s; }
+.scrim.open { opacity: 1; pointer-events: auto; }
+.toast { position: fixed; z-index: 60; left: 50%; bottom: calc(28px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: var(--bg); padding: 9px 16px; border-radius: 999px; font-weight: 700; font-size: 13.5px; opacity: 0; transition: .25s; pointer-events: none; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+/* swipe hint */
+.hint { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12.5px; font-weight: 600; }
+.hint svg { animation: nudge 1.6s ease-in-out infinite; }
+@keyframes nudge { 50% { transform: translateY(5px); } }
+
+/* desk mode: a scannable grid */
+.desk .feed { scroll-snap-type: none; padding-top: 52px; }
+.desk .topbar { background: var(--bg); padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.desk .feed-inner { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 16px; padding-block: 8px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); align-items: start; }
+.desk .slot { min-height: 0; padding: 0; display: block; }
+.desk .clip { width: 100%; min-height: 0; border-radius: 16px; }
+.desk .body { padding-top: 22px; }
+.desk .hint, .desk .steps { display: none; }
+.desk .clip::before, .desk .clip::after { animation: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .feed { scroll-behavior: auto; }
+}
+</style>
+
+<div class="app" id="app">
+  <aside class="side" aria-label="Sections">
+    <a class="logo" href="#intro" aria-label="Client Solutions Ops Desk, back to start">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="4" y="15" width="5" height="11" rx="1.5" fill="#25f0e8"/><rect x="12.5" y="9" width="5" height="17" rx="1.5" fill="#f3f3f7"/><rect x="21" y="4" width="5" height="22" rx="1.5" fill="#ff2d6f"/></svg>
+      <span>ops.desk</span>
+    </a>
+    <nav class="nav" id="nav"></nav>
+    <small>Swipe or use ↑ ↓ to move between clips. Tap <b>SQL</b> on any clip to see the query behind it.</small>
+    <div class="who">
+      <b>Abdullah Al Mneni</b>
+      <small>Business Technology Management, Toronto Metropolitan University. Built with Claude Code. Synthetic data; independent concept, not affiliated with TikTok or any ad platform.</small>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="topbar" role="group" aria-label="View">
+      <button type="button" id="v-feed" aria-pressed="true">For You</button>
+      <button type="button" id="v-desk" aria-pressed="false">Desk</button>
+    </div>
+    <div class="steps" id="steps" aria-label="Clip position"></div>
+    <div class="feed" id="feed" tabindex="-1"><div class="feed-inner" id="clips"></div></div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+  <div class="panel">
+    <button type="button" class="x" id="sheet-close">Close</button>
+    <h3 id="sheet-title">Behind this clip</h3>
+    <p id="sheet-note"></p>
+    <pre id="sheet-sql"></pre>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const D = /*__DATA__*/null;
+
+/* ---------- formatting ---------- */
+const usd = (n, d) => {
+  const a = Math.abs(n);
+  if (a >= 1e6) return "$" + (n / 1e6).toFixed(d ?? 2) + "M";
+  if (a >= 1e4) return "$" + Math.round(n / 1e3) + "k";
+  return "$" + n.toLocaleString("en-US", { maximumFractionDigits: 2 });
+};
+const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const mdate = s => new Date(s + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+/* ---------- icons ---------- */
+const IC = {
+  save: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>',
+  sql: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6M5 12v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6"/></svg>',
+  share: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 7-7 7M21 12H10a7 7 0 0 0-7 7"/></svg>',
+  note: '<svg width="14" height="14" viewBox="0 0 24 24" fill="#cfcfe0" aria-hidden="true"><path d="M9 18.5A2.5 2.5 0 1 1 7 16V5l12-2v12.5a2.5 2.5 0 1 1-2-2.45V7.4l-8 1.3z"/></svg>',
+  down: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>'
+};
+
+/* ---------- derived numbers ---------- */
+const K = D.kpi, F = D.funnel, W17 = D.week17;
+const spendUp = K.spend.q3 / K.spend.q2 - 1;
+const autoA = D.adoption.find(r => r.p === "Auto-Campaigns");
+const cpaAll = D.cpa.find(r => r.k === "All accounts"), cpaSame = D.cpa.find(r => r.k !== "All accounts");
+const exc = D.excSummary.reduce((m, r) => (m[r.c] = r, m), {});
+const att = D.attSummary;
+
+/* ---------- clip definitions ---------- */
+const CLIPS = [
+{
+  id: "intro", nav: "Start", tags: ["#clientsolutions", "#reporting", "#Q3"], src: "mart_quarter · desk.db",
+  note: "Every number on this page comes from a SQLite database built by the Python and SQL in the repository. The data is synthetic: a seeded model of 152 advertisers over 26 weeks (Apr 6 to Oct 4, 2026).",
+  sql: `SELECT quarter, SUM(spend_usd) AS spend,\n       SUM(conversion_value_usd) / SUM(spend_usd) AS roas,\n       COUNT(DISTINCT advertiser_id) AS active_advertisers\nFROM fct_spend          -- client accounts only\nGROUP BY quarter;`,
+  html: () => `
+    <div class="kicker"><i>●</i> Loopwave Ads · North America · as of ${mdate(D.asOf)}</div>
+    <h1 class="glitch">Client Solutions Ops Desk</h1>
+    <p class="lead">The reporting a client solutions team runs on: spend and ad metrics, product adoption, purchase-order controls, delivery against commitments and a business review. <b>Four problems are planted in the data.</b> Each clip shows one, and how the reporting catches it.</p>
+    <div class="stats">
+      <div class="stat"><span>Q3 spend</span><b class="num" data-count="${K.spend.q3}" data-fmt="usdm">${usd(K.spend.q3, 1)}</b><span class="up">▲ ${pct(spendUp)} vs Q2</span></div>
+      <div class="stat"><span>Q3 ROAS</span><b class="num" data-count="${K.roas.q3}" data-fmt="x">${K.roas.q3.toFixed(2)}x</b><span class="up">▲ from ${K.roas.q2.toFixed(2)}x</span></div>
+      <div class="stat"><span>Active advertisers</span><b class="num" data-count="${K.active_advertisers.q3}" data-fmt="int">${K.active_advertisers.q3}</b><span style="color:var(--muted)">Q3, clients only</span></div>
+    </div>
+    <div class="chips" aria-label="What is inside">
+      ${["6 ad products", "26 weeks", "17 data tests", "Excel workbook with 2 PivotTables"].map(t => `<span class="chip" style="cursor:default">${t}</span>`).join("")}
+    </div>
+    <div class="hint" style="margin-top:auto">${IC.down} Swipe up for the first problem</div>`
+},
+{
+  id: "spike", nav: "Week-17 spike", tags: ["#datatests", "#dedupe"], src: "mart_weekly · raw_ad_spend_export",
+  note: "Test T01 found 158 rows that appear twice in the raw export: the week-17 US file was loaded a second time (load 2017). Staging keeps the latest load per week, advertiser and product, and test T02 checks that the staged table is unique.",
+  sql: `WITH ranked AS (\n  SELECT r.*, ROW_NUMBER() OVER (\n    PARTITION BY week_start, advertiser_id, product\n    ORDER BY load_id DESC) AS rn\n  FROM raw_ad_spend_export r)\nSELECT * FROM ranked WHERE rn = 1;   -- stg_ad_spend`,
+  html: () => `
+    <div class="kicker"><i>01</i> Planted problem · duplicate export</div>
+    <h2 class="glitch">Week 17 spend jumped ${pct(W17.raw / W17.clean - 1, 0)}. It didn't happen.</h2>
+    <p class="lead">The raw export shows <b class="num">${usd(W17.raw)}</b> for the week of Jul 27. <b>${W17.duplicate_rows} US rows were loaded twice.</b> The real figure is <b class="num">${usd(W17.clean)}</b>, so <b class="num">${usd(W17.inflation)}</b> of reported spend was not real.</p>
+    <button type="button" class="toggle" data-act="raw" aria-pressed="true"><span class="sw"></span>Show the raw export</button>
+    <div id="spike-chart"></div>
+    <div class="legend"><span><i style="background:var(--pink)"></i>Raw export</span><span><i style="background:var(--cyan)"></i>After de-duplication</span></div>`
+},
+{
+  id: "adoption", nav: "Adoption", tags: ["#productadoption", "#dashboards"], src: "mart_adoption_weekly",
+  note: "Adopted means at least $500 spent on the product in the last 4 weeks (Sep 7 to Oct 4). Active means any spend in those weeks. Eight internal QA sandbox accounts run Auto-Campaigns every week; test T10 checks they are flagged and T11 that the reporting table leaves them out.",
+  sql: `SELECT win.product,\n  COUNT(DISTINCT CASE WHEN win.spend4 >= 500\n        AND a.is_test = 0 THEN win.advertiser_id END) AS adopters\nFROM win  -- spend per account, product, rolling 4 weeks\nJOIN stg_advertisers a USING (advertiser_id)\nWHERE win.week_num = 26\nGROUP BY win.product;`,
+  html: () => `
+    <div class="kicker"><i>02</i> Planted problem · test accounts</div>
+    <h2 class="glitch">1 in 6 "adopters" of the new product was us.</h2>
+    <p class="lead">Auto-Campaigns launched Jun 8. Counting every account, adoption reads <b class="num">${pct(autoA.naive)}</b>. Eight of those ${autoA.an} adopters are internal QA sandboxes. Clients only: <b class="num">${pct(autoA.clean)}</b>.</p>
+    <button type="button" class="toggle" data-act="sandbox" aria-pressed="false"><span class="sw"></span>Count QA sandbox accounts</button>
+    <div class="bars" id="adopt-bars"></div>`
+},
+{
+  id: "funnel", nav: "Launch funnel", tags: ["#launch", "#pitchcoverage"], src: "mart_auto_by_csm · csm_activity",
+  note: "Pitched comes from the CSM activity log. Tested = any Auto-Campaigns spend; adopted = $500+ in the last 4 weeks; sustained = spend in each of the last 4 weeks. The extra-adopters figure assumes the low-coverage book converts pitches at the team's overall rate (" + pct(F.adopted / F.pitched, 0) + " of pitched accounts adopted).",
+  sql: `SELECT csm_name, COUNT(*) AS eligible,\n       SUM(pitched) AS pitched, SUM(adopted) AS adopted,\n       1.0 * SUM(pitched) / COUNT(*) AS pitch_rate\nFROM mart_auto_accounts\nGROUP BY csm_name ORDER BY adoption_rate DESC;`,
+  html: () => `
+    <div class="kicker"><i>03</i> Launch tracking</div>
+    <h2 class="glitch">The gap is pitches, not product fit.</h2>
+    <div class="bars" id="funnel-bars"></div>
+    <p class="lead">${D.lowCsm.name}'s book was pitched <b class="num">${pct(D.lowCsm.rate, 0)}</b> of the time; the rest of the team averaged <b class="num">${pct(D.lowCsm.teamRate, 0)}</b>. Closing that gap is worth about <b class="num">${Math.round(D.lowCsm.extraAdopters)}</b> more adopters.</p>
+    <div id="csm-chart"></div>`
+},
+{
+  id: "controls", nav: "PO controls", tags: ["#internalcontrols", "#purchaseorders", "#budgets"], src: "mart_po_exceptions",
+  note: "Spend rows carry the PO number billing used. Controls: spend above the PO amount, spend booked after the PO ended, invoice-billed spend with no PO number, a PO number issued to two advertisers, and accounts still spending with no Q4 PO. The four accounts that kept booking July spend on their Q2 PO also went over it.",
+  sql: `SELECT 'Spend above PO' AS control, a.advertiser_name,\n       b.spent - p.po_amount_usd AS amount_usd\nFROM booked b\nJOIN stg_purchase_orders p\n  ON p.po_number = b.po_number AND p.advertiser_id = b.advertiser_id\nJOIN stg_advertisers a ON a.advertiser_id = b.advertiser_id\nWHERE b.spent > p.po_amount_usd;`,
+  html: () => `
+    <div class="kicker"><i>04</i> Planted problem · purchase orders</div>
+    <h2 class="glitch">${usd(D.harbourline.amt, 2)} spent past its POs at one agency.</h2>
+    <p class="lead">Harbourline Media's Q3 POs were copied from Q2 while its accounts kept growing. <b>${D.harbourline.n} accounts</b> went over. The queue below is this week's follow-up list, worst first.</p>
+    <div class="chips" id="exc-chips" role="group" aria-label="Filter by control"></div>
+    <div class="queue" id="exc-list"></div>`
+},
+{
+  id: "attainment", nav: "Q3 attainment", tags: ["#pacing", "#commitments"], src: "mart_attainment",
+  note: "Attainment = Q3 delivered spend divided by the Q3 commitment agreed with sales. Under below 90%, over above 110%. Each dot is one client account; dots above 180% sit on the right edge.",
+  sql: `SELECT advertiser_name, committed_usd, spend,\n  spend / committed_usd AS attainment,\n  CASE WHEN spend / committed_usd > 1.10 THEN 'Over'\n       WHEN spend / committed_usd >= 0.90 THEN 'On plan'\n       ELSE 'Under' END AS status\nFROM ...;   -- mart_attainment`,
+  html: () => `
+    <div class="kicker"><i>05</i> Delivery vs commitment</div>
+    <h2 class="glitch">The book hit ${pct((att.Over.spend + att["On plan"].spend + att.Under.spend) / (att.Over.committed + att["On plan"].committed + att.Under.committed), 0)} of plan. That hides ${att.Under.n} accounts.</h2>
+    <p class="lead">Over-delivery nets out the shortfall. <b>${att.Under.n} accounts</b> came in under 90% of their commitment, <b class="num">${usd(att.Under.committed - att.Under.spend)}</b> short. Those are the calls to make before Q4 planning.</p>
+    <div id="att-chart"></div>
+    <div class="legend"><span><i style="background:var(--bad)"></i>Under ${att.Under.n}</span><span><i style="background:var(--muted)"></i>On plan ${att["On plan"].n}</span><span><i style="background:var(--good)"></i>Over ${att.Over.n}</span></div>`
+},
+{
+  id: "cpa", nav: "Sales question", tags: ["#metrics", "#salessupport"], src: "mart_cpa_question",
+  note: "Same account, same week compares Auto-Campaigns with In-Feed Video only inside accounts and weeks that ran both, which removes the vertical mix. " + pct(cpaAll.gr_auto, 0) + " of Auto-Campaigns spend is Gaming and Retail, against " + pct(cpaAll.gr_feed, 0) + " for In-Feed Video.",
+  sql: `WITH pairs AS (\n  SELECT a.advertiser_id, a.week_num\n  FROM fct_spend a JOIN fct_spend b\n    ON b.advertiser_id = a.advertiser_id AND b.week_num = a.week_num\n  WHERE a.product = 'Auto-Campaigns' AND b.product = 'In-Feed Video')\nSELECT product, SUM(spend_usd) / SUM(conversions) AS cpa\nFROM fct_spend JOIN pairs USING (advertiser_id, week_num) ...`,
+  html: () => `
+    <div class="kicker"><i>06</i> A question from sales</div>
+    <h2 class="glitch">"Is Auto-Campaigns ${pct(1 - cpaAll.auto / cpaAll.feed, 0)} cheaper per conversion?"</h2>
+    <p class="lead">That's what the dashboard total says. But Auto-Campaigns adopters lean to Gaming and Retail, where conversions are cheap anyway. Inside the same accounts and weeks, the real gap is <b class="num">${pct(1 - cpaSame.auto / cpaSame.feed, 0)}</b>.</p>
+    <div id="cpa-chart"></div>
+    <p class="lead" style="font-size:13.5px;color:var(--muted)">What to tell the rep: yes, it's cheaper, by about a quarter. Quote that number, not the bigger one.</p>`
+},
+{
+  id: "metrics", nav: "Metric guide", tags: ["#metricguide", "#salesenablement"], src: "KPI Summary · Metric Guide tab",
+  note: "Values are Q3 2026 totals for client accounts. Ratios are computed on totals (total conversions / total clicks), never as an average of account ratios. The workbook's Metric Guide tab has the same table with live formulas.",
+  sql: `SELECT 1000.0 * SUM(spend_usd) / SUM(impressions) AS cpm,\n       1.0 * SUM(clicks) / SUM(impressions)        AS ctr,\n       1.0 * SUM(conversions) / SUM(clicks)        AS cvr,\n       SUM(spend_usd) / SUM(conversions)           AS cpa,\n       SUM(conversion_value_usd) / SUM(spend_usd)  AS roas\nFROM fct_spend WHERE quarter = '2026-Q3';`,
+  html: () => `
+    <div class="kicker"><i>07</i> For the sales team</div>
+    <h2 class="glitch">Five metrics, one tap each.</h2>
+    <p class="lead">Tap a card for the mistake people make with it.</p>
+    <div class="flips" id="flips"></div>`
+},
+{
+  id: "qbr", nav: "QBR", tags: ["#businessreview", "#retail"], src: "mart_qbr",
+  note: "Maple & Main Grocers is a fictional enterprise retail account. Recommendations are written from its Q2 and Q3 numbers. The workbook's QBR tab rebuilds this view for any account typed into cell B3.",
+  sql: `SELECT quarter, product, SUM(spend_usd) AS spend,\n       SUM(conversions) AS conversions,\n       SUM(conversion_value_usd) AS conversion_value\nFROM fct_spend\nWHERE advertiser_name = 'Maple & Main Grocers'\nGROUP BY quarter, product;`,
+  html: () => `
+    <div class="kicker"><i>08</i> Quarterly business review</div>
+    <h2 class="glitch">Maple &amp; Main Grocers, Q3</h2>
+    <div class="stats" id="qbr-stats"></div>
+    <div class="bars" id="qbr-bars"></div>
+    <ol class="lead" style="padding-left:18px;margin:0;display:grid;gap:6px;font-size:14px" id="qbr-recs"></ol>`
+},
+{
+  id: "tests", nav: "Data tests", tags: ["#dataquality", "#sql"], src: "test_results · sql/tests.sql",
+  note: "Error tests on the staging and reporting layers must pass or the pipeline stops (python/pipeline.py). Raw-layer failures are expected: they are the planted problems, caught and handled in staging. Warn tests feed the PO exceptions queue.",
+  sql: `SELECT 'T02' AS test_id, 'staging' AS layer, 'error' AS severity,\n  (SELECT COUNT(*) FROM (\n     SELECT 1 FROM stg_ad_spend\n     GROUP BY week_start, advertiser_id, product\n     HAVING COUNT(*) > 1)) AS failures\nUNION ALL ...   -- 17 tests in sql/tests.sql`,
+  html: () => `
+    <div class="kicker"><i>09</i> Checks before anyone sees a number</div>
+    <h2 class="glitch">17 tests between the raw files and any number here.</h2>
+    <p class="lead">Raw-layer failures are the planted problems, caught and fixed in staging. Warnings feed the PO queue. T10 and T11 keep the QA sandboxes out of reporting.</p>
+    <div class="tests" id="test-list"></div>`
+},
+{
+  id: "about", nav: "How it's built", tags: ["#builtwithclaudecode", "#portfolio"], src: "README.md",
+  note: "Independent student concept. Not affiliated with or endorsed by TikTok or any ad platform. All advertisers, agencies, people and numbers are synthetic.",
+  sql: `python3 python/generate_data.py   # seeded synthetic data\npython3 python/pipeline.py        # SQLite: staging, tests, marts\npython3 python/build_workbook.py  # Excel workbook + PivotTables\npython3 python/build_site.py      # this page`,
+  html: () => `
+    <div class="kicker"><i>●</i> How it's built</div>
+    <h2 class="glitch">Built to be checked.</h2>
+    <p class="lead">A seeded Python model generates the raw exports. SQLite cleans them, runs ${D.tests.length} tests and builds the reporting tables. The same numbers feed an <b>Excel workbook</b> (two PivotTables, SUMIFS and COUNTIFS on every tab, charts, conditional flags) and this page. Built with <b>Claude Code</b>.</p>
+    <div class="stats">
+      <div class="stat"><span>Raw rows</span><b class="num">${D.counts.raw_rows.toLocaleString()}</b><span>4 export files</span></div>
+      <div class="stat"><span>Purchase orders</span><b class="num">${D.counts.pos}</b><span>Q2 to Q4</span></div>
+      <div class="stat"><span>Accounts</span><b class="num">${D.counts.client_accounts}</b><span>+${D.counts.test_accounts} QA sandboxes</span></div>
+    </div>
+    <div class="chips">
+      <a class="chip" href="https://github.com/abdullahmanini/client-solutions-ops-desk" target="_blank" rel="noopener">Source on GitHub</a>
+      <a class="chip" href="https://github.com/abdullahmanini/client-solutions-ops-desk/raw/main/outputs/client_solutions_ops_desk.xlsx" target="_blank" rel="noopener">Excel workbook</a>
+    </div>
+    <p class="lead" style="font-size:13.5px;color:var(--muted)">Abdullah Al Mneni · Business Technology Management, Toronto Metropolitan University. Independent concept on synthetic data; not affiliated with TikTok or any ad platform.</p>`
+}
+];
+
+/* ---------- render clips ---------- */
+const clipsEl = document.getElementById("clips");
+clipsEl.innerHTML = CLIPS.map((c, i) => `
+<section class="slot" id="${c.id}" aria-label="${esc(c.nav)}">
+  <article class="clip" data-i="${i}">
+    <div class="body">${c.html()}</div>
+    <div class="cap">
+      <div class="handle">@ops.desk <span>· ${i + 1}/${CLIPS.length}</span></div>
+      <div class="tags">${c.tags.map(t => `<em>${t}</em>`).join(" ")}</div>
+      <div class="sound">${IC.note}<div class="track"><span>source · ${esc(c.src)} · synthetic data · source · ${esc(c.src)}</span></div></div>
+    </div>
+    <div class="rail">
+      <button type="button" data-act="save" aria-pressed="false" aria-label="Save this clip"><span class="ic">${IC.save}</span>Save</button>
+      <button type="button" data-act="sql" aria-label="Show the SQL behind this clip"><span class="ic">${IC.sql}</span>SQL</button>
+      <button type="button" data-act="share" aria-label="Copy a link to this clip"><span class="ic">${IC.share}</span>Share</button>
+      <span class="disc" aria-hidden="true"></span>
+    </div>
+  </article>
+</section>`).join("");
+
+document.getElementById("nav").innerHTML = CLIPS.map((c, i) =>
+  `<button type="button" data-go="${i}"><span class="dot"></span>${esc(c.nav)}</button>`).join("");
+document.getElementById("steps").innerHTML = CLIPS.map((c, i) =>
+  `<button type="button" data-go="${i}" aria-label="Go to ${esc(c.nav)}"></button>`).join("");
+
+/* ---------- charts ---------- */
+function spikeChart(showRaw) {
+  const w = 400, h = 200, pl = 40, pr = 8, pt = 14, pb = 24;
+  const xs = wk => pl + (wk - 1) / 25 * (w - pl - pr);
+  const max = 4e6, ys = v => pt + (1 - v / max) * (h - pt - pb);
+  const path = key => D.weekly.map((r, i) => (i ? "L" : "M") + xs(r.w).toFixed(1) + "," + ys(r[key]).toFixed(1)).join("");
+  const ticks = [0, 1e6, 2e6, 3e6, 4e6].map(v => `<line class="grid" x1="${pl}" x2="${w - pr}" y1="${ys(v)}" y2="${ys(v)}"/><text x="${pl - 6}" y="${ys(v) + 3}" text-anchor="end">${v ? "$" + v / 1e6 + "M" : "$0"}</text>`).join("");
+  const months = D.weekly.filter(r => +r.d.slice(8) <= 7).map(r => `<text x="${xs(r.w)}" y="${h - 6}" text-anchor="middle">${mdate(r.d).split(" ")[0]}</text>`).join("");
+  const p17 = D.weekly.find(r => r.w === 17);
+  document.getElementById("spike-chart").innerHTML = `
+  <svg class="chart" viewBox="0 0 ${w} ${h}" role="img" aria-label="Weekly client spend, raw export versus de-duplicated, April to October 2026">
+    ${ticks}${months}
+    ${showRaw ? `<path class="ln" d="${path("raw")}" stroke="var(--pink)"/>` : ""}
+    <path class="ln" d="${path("clean")}" stroke="var(--cyan)"/>
+    ${showRaw ? `<g class="pin"><circle cx="${xs(17)}" cy="${ys(p17.raw)}" r="4.5" fill="var(--pink)"/>
+      <text x="${xs(17) - 8}" y="${ys(p17.raw) - 6}" text-anchor="end" style="fill:var(--ink);font-weight:600">wk 17 +${usd(W17.inflation, 2)}</text></g>` : ""}
+  </svg>`;
+}
+
+function adoptBars(withSandbox) {
+  document.getElementById("adopt-bars").innerHTML = D.adoption.map(r => {
+    const v = withSandbox ? r.naive : r.clean, n = withSandbox ? r.an : r.ac, d = withSandbox ? r.dn : r.dc;
+    const hot = withSandbox && r.p === "Auto-Campaigns";
+    return `<div class="bar"><span class="lab">${esc(r.p)}</span><span class="val">${pct(v)} <small>${n} of ${d}</small></span>
+      <div class="track2"><div class="fill${hot ? " hot" : ""}" style="width:${(v * 100).toFixed(1)}%"></div></div></div>`;
+  }).join("");
+}
+
+function funnel() {
+  const st = [["Eligible", F.eligible], ["Pitched", F.pitched], ["Tested", F.tested], ["Adopted", F.adopted], ["Sustained", F.sustained]];
+  document.getElementById("funnel-bars").innerHTML = st.map(([k, v], i) =>
+    `<div class="bar"><span class="lab">${k}</span><span class="val">${v} <small>${i ? pct(v / st[i - 1][1], 0) + " of previous" : "accounts with Q3 spend"}</small></span>
+     <div class="track2"><div class="fill" style="width:${(v / F.eligible * 100).toFixed(1)}%"></div></div></div>`).join("");
+  const w = 400, rowH = 24, pl = 112, pr = 40, h = D.csm.length * rowH + 22;
+  const xs = v => pl + v * (w - pl - pr);
+  const rows = [...D.csm].sort((a, b) => b.pr - a.pr).map((r, i) => {
+    const y = 10 + i * rowH, low = r.n === D.lowCsm.name;
+    return `<text x="0" y="${y + 4}" style="fill:${low ? "var(--ink)" : "var(--muted)"};font-weight:${low ? 600 : 400}">${esc(r.n)}</text>
+      <line x1="${xs(0)}" x2="${xs(1)}" y1="${y}" y2="${y}" class="grid"/>
+      <line x1="${xs(r.ar)}" x2="${xs(r.pr)}" y1="${y}" y2="${y}" stroke="${low ? "var(--pink)" : "var(--cyan)"}" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="${xs(r.ar)}" cy="${y}" r="4" fill="var(--clip)" stroke="var(--ink)" stroke-width="1.6"/>
+      <circle cx="${xs(r.pr)}" cy="${y}" r="5" fill="${low ? "var(--pink)" : "var(--cyan)"}"/>
+      <text x="${xs(r.pr) + 9}" y="${y + 4}">${pct(r.pr, 0)}</text>`;
+  }).join("");
+  document.getElementById("csm-chart").innerHTML = `
+    <svg class="chart" viewBox="0 0 ${w} ${h}" role="img" aria-label="Pitch rate and adoption rate by CSM">
+      ${rows}
+      <text x="${xs(0)}" y="${h - 2}">0%</text><text x="${xs(0.5)}" y="${h - 2}" text-anchor="middle">50%</text><text x="${xs(1)}" y="${h - 2}" text-anchor="end">100%</text>
+    </svg>
+    <div class="legend" style="margin-top:6px"><span><i style="background:var(--cyan);height:8px;width:8px;border-radius:50%"></i>Pitch rate</span><span><i style="background:transparent;border:1.6px solid var(--ink);height:8px;width:8px;border-radius:50%"></i>Adoption rate</span></div>`;
+}
+
+let excFilter = "All";
+function excList() {
+  const controls = ["All", ...D.excSummary.map(r => r.c)];
+  document.getElementById("exc-chips").innerHTML = controls.map(c => {
+    const s = exc[c];
+    return `<button type="button" class="chip" data-exc="${esc(c)}" aria-pressed="${c === excFilter}">${esc(c)}${s ? " · " + s.n : ""}</button>`;
+  }).join("");
+  let rows = D.exceptions.filter(e => excFilter === "All" ? e.c !== "No Q4 PO yet" : e.c === excFilter);
+  const shown = rows.slice(0, 7);
+  const more = rows.length - shown.length;
+  document.getElementById("exc-list").innerHTML = shown.map((e, i) => `
+    <div class="exc sev${e.s[0]}" style="animation-delay:${i * 60}ms">
+      <b>${esc(e.adv)} <span class="pill ${e.s[0]}">${esc(e.s)}</span></b><span class="amt">${e.c === "PO number on two advertisers" ? esc(e.po) : usd(e.amt)}</span>
+      <small>${esc(e.c)} · ${esc(e.ag)} · ${esc(e.d)}</small>
+    </div>`).join("") +
+    (more > 0 ? `<div class="hint" style="justify-content:center">+${more} more in the workbook's PO Controls tab</div>` : "") +
+    (excFilter === "All" ? `<div class="hint" style="justify-content:center">${exc["No Q4 PO yet"].n} accounts still spending with no Q4 PO (tap the chip above)</div>` : "");
+}
+
+function attChart() {
+  const w = 400, h = 150, pl = 8, pr = 8, lo = 0.4, hi = 1.8;
+  const xs = v => pl + (Math.min(Math.max(v, lo), hi) - lo) / (hi - lo) * (w - pl - pr);
+  const lane = { Under: 34, "On plan": 66, Over: 98 };
+  const col = { Under: "var(--bad)", "On plan": "var(--muted)", Over: "var(--good)" };
+  let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+  const dots = D.attainment.map((a, i) => `<circle cx="${xs(a.a).toFixed(1)}" cy="${(lane[a.st] + (rnd() - .5) * 22).toFixed(1)}" r="3.6" fill="${col[a.st]}" fill-opacity=".85" style="animation-delay:${(i % 40) * 18}ms"><title>${esc(a.n)}: ${pct(a.a, 0)} of ${usd(a.c)}</title></circle>`).join("");
+  const ref = [0.5, 0.9, 1.1, 1.5].map(v => `<line x1="${xs(v)}" x2="${xs(v)}" y1="14" y2="${h - 22}" stroke="var(--line)" ${v === 0.9 || v === 1.1 ? 'stroke-dasharray="3 3" stroke="var(--muted)"' : ""}/><text x="${xs(v)}" y="${h - 8}" text-anchor="middle">${Math.round(v * 100)}%</text>`).join("");
+  document.getElementById("att-chart").innerHTML = `<svg class="chart" viewBox="0 0 ${w} ${h}" role="img" aria-label="Q3 attainment by account, 152 accounts">${ref}<g class="dots">${dots}</g></svg>`;
+}
+
+function cpaChart() {
+  const max = Math.max(cpaAll.feed, cpaAll.auto) * 1.08;
+  const pair = (r, title) => `
+    <div style="display:grid;gap:6px"><span class="kicker" style="color:var(--ink)">${title}</span>
+      <div class="bars">
+        <div class="bar"><span class="lab">In-Feed Video</span><span class="val">$${r.feed.toFixed(2)}</span><div class="track2"><div class="fill hot" style="width:${(r.feed / max * 100).toFixed(1)}%"></div></div></div>
+        <div class="bar"><span class="lab">Auto-Campaigns</span><span class="val">$${r.auto.toFixed(2)} <small>${pct(r.auto / r.feed - 1, 0)}</small></span><div class="track2"><div class="fill" style="width:${(r.auto / max * 100).toFixed(1)}%"></div></div></div>
+      </div></div>`;
+  document.getElementById("cpa-chart").innerHTML = `<div style="display:grid;gap:16px">${pair(cpaAll, "Dashboard total, all accounts")}${pair(cpaSame, "Same account, same week")}</div>`;
+}
+
+function flips() {
+  const m = [
+    ["CPM", usd(K.cpm.q3), "Spend ÷ impressions × 1,000", "Comparing CPM across placements as if it measured quality. Search costs more per view and converts better."],
+    ["CTR", pct(K.ctr.q3, 2), "Clicks ÷ impressions", "Calling a higher CTR better results. A click is not a purchase."],
+    ["CVR", pct(K.cvr.q3, 2), "Conversions ÷ clicks", "Dividing by impressions instead of clicks, which mixes CTR into it."],
+    ["CPA", "$" + K.cpa.q3.toFixed(2), "Spend ÷ conversions", "Comparing two products across different account mixes. See the sales question clip."],
+    ["ROAS", K.roas.q3.toFixed(2) + "x", "Conversion value ÷ spend", "Averaging each account's ROAS. Divide total value by total spend instead."]
+  ];
+  document.getElementById("flips").innerHTML = m.map(([k, v, f, mis], i) => `
+    <button type="button" class="flip${i === 4 ? " wide" : ""}" aria-pressed="false" aria-label="${k}: ${v}. Tap for the common mistake">
+      <span class="in"><span class="f"><b>${k}</b><span class="num">${v}</span><small>${f} · Q3</small></span>
+      <span class="b"><small>Common mistake</small>${mis}</span></span>
+    </button>`).join("");
+}
+
+function qbr() {
+  const prods = [...new Set(D.qbr.map(r => r.p))];
+  const g = (q, p, k) => (D.qbr.find(r => r.q === q && r.p === p) || {})[k] || 0;
+  const tot = (q, k) => D.qbr.filter(r => r.q === q).reduce((s, r) => s + r[k], 0);
+  const s2 = tot("2026-Q2", "s"), s3 = tot("2026-Q3", "s"), r2 = tot("2026-Q2", "v") / s2, r3 = tot("2026-Q3", "v") / s3;
+  document.getElementById("qbr-stats").innerHTML = `
+    <div class="stat"><span>Q3 spend</span><b class="num">${usd(s3)}</b><span style="color:var(--muted)">${pct(s3 / s2 - 1)} vs Q2</span></div>
+    <div class="stat"><span>Q3 ROAS</span><b class="num">${r3.toFixed(2)}x</b><span style="color:var(--muted)">Q2 ${r2.toFixed(2)}x</span></div>
+    <div class="stat"><span>Products used</span><b class="num">${prods.filter(p => g("2026-Q3", p, "s") > 0).length} of 6</b><span style="color:var(--muted)">no Shoppable, no Search</span></div>`;
+  const max = Math.max(...prods.map(p => g("2026-Q3", p, "s")));
+  document.getElementById("qbr-bars").innerHTML = prods.sort((a, b) => g("2026-Q3", b, "s") - g("2026-Q3", a, "s")).map(p => {
+    const s = g("2026-Q3", p, "s"), roas = g("2026-Q3", p, "v") / s;
+    return `<div class="bar"><span class="lab">${esc(p)}${g("2026-Q2", p, "s") ? "" : ' <span class="pill ok">new in Q3</span>'}</span><span class="val">${usd(s)} <small>${roas.toFixed(2)}x ROAS</small></span>
+      <div class="track2"><div class="fill${p === "Auto-Campaigns" ? " hot" : ""}" style="width:${Math.max(1.5, s / max * 100).toFixed(1)}%"></div></div></div>`;
+  }).join("");
+  const auto = g("2026-Q3", "Auto-Campaigns", "v") / g("2026-Q3", "Auto-Campaigns", "s");
+  const feed = g("2026-Q3", "In-Feed Video", "v") / g("2026-Q3", "In-Feed Video", "s");
+  document.getElementById("qbr-recs").innerHTML = [
+    `<b>Scale the Auto-Campaigns test in steps.</b> It returned ${auto.toFixed(2)}x against ${feed.toFixed(2)}x for In-Feed Video in its first quarter. Re-read after 4 weeks.`,
+    `<b>Trial Shoppable Video before the holidays.</b> 9 of 26 retail peers run it, at 5.84x ROAS in Q3 against 3.82x for their In-Feed Video.`,
+    `<b>Get the Q4 PO signed</b> before October spend books with no PO.`
+  ].map(t => `<li>${t}</li>`).join("");
+}
+
+function tests() {
+  document.getElementById("test-list").innerHTML = D.tests.map((t, i) => {
+    let pill;
+    if (t.f === 0) pill = '<span class="pill ok">pass</span>';
+    else if (t.l === "raw") pill = `<span class="pill M">caught · ${t.f}</span>`;
+    else pill = `<span class="pill L">to queue · ${t.f}</span>`;
+    return `<div class="t" style="animation-delay:${i * 35}ms"><code>${t.id}</code><span>${esc(t.d)} <small style="color:var(--muted)">· ${t.l}</small></span>${pill}</div>`;
+  }).join("");
+}
+
+spikeChart(true); adoptBars(false); funnel(); excList(); attChart(); cpaChart(); flips(); qbr(); tests();
+
+/* ---------- counters ---------- */
+function countUp(el) {
+  const to = +el.dataset.count, fmt = el.dataset.fmt, t0 = performance.now(), dur = 1100;
+  const show = v => fmt === "usdm" ? usd(v, 1) : fmt === "x" ? v.toFixed(2) + "x" : Math.round(v).toString();
+  const step = now => { const k = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - k, 3); el.textContent = show(to * e); if (k < 1) requestAnimationFrame(step); else el.textContent = show(to); };
+  requestAnimationFrame(step);
+}
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- active clip tracking ---------- */
+const feed = document.getElementById("feed");
+const slots = [...document.querySelectorAll(".slot")];
+let current = 0;
+function setActive(i) {
+  current = i;
+  document.querySelectorAll("#nav button, #steps button").forEach(b => b.setAttribute("aria-current", +b.dataset.go === i ? "true" : "false"));
+}
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    const clip = en.target.querySelector(".clip");
+    if (en.isIntersecting) {
+      clip.classList.add("live");
+      if (!clip.classList.contains("play") && !reduce && !document.getElementById("app").classList.contains("desk")) {
+        clip.classList.add("play");
+        clip.querySelectorAll("[data-count]").forEach(countUp);
+      }
+      if (en.intersectionRatio >= 0.55) setActive(+clip.dataset.i);
+    } else clip.classList.remove("live");
+  });
+}, { root: feed, threshold: [0, 0.55] });
+slots.forEach(s => io.observe(s));
+setActive(0);
+
+function nearest() {
+  const top = feed.scrollTop + 8;
+  let k = 0;
+  slots.forEach((s, i) => { if (s.offsetTop <= top) k = i; });
+  return k;
+}
+function go(i) { i = Math.max(0, Math.min(CLIPS.length - 1, i)); slots[i].scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }); }
+document.addEventListener("click", e => {
+  const g = e.target.closest("[data-go]"); if (g) go(+g.dataset.go);
+});
+document.addEventListener("keydown", e => {
+  if (document.getElementById("sheet").classList.contains("open")) { if (e.key === "Escape") closeSheet(); return; }
+  if (e.target.closest("input, textarea")) return;
+  if (["ArrowDown", "PageDown", "j"].includes(e.key)) { e.preventDefault(); go(nearest() + 1); }
+  if (["ArrowUp", "PageUp", "k"].includes(e.key)) { e.preventDefault(); go(nearest() - 1); }
+});
+
+/* ---------- interactions ---------- */
+const toast = msg => { const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 1800); };
+const saved = (() => { try { return new Set(JSON.parse(localStorage.getItem("opsdesk.saved") || "[]")); } catch { return new Set(); } })();
+document.querySelectorAll('[data-act="save"]').forEach(b => {
+  const id = CLIPS[+b.closest(".clip").dataset.i].id;
+  if (saved.has(id)) b.setAttribute("aria-pressed", "true");
+});
+const sheet = document.getElementById("sheet"), scrim = document.getElementById("scrim");
+let lastFocus = null;
+function openSheet(c) {
+  lastFocus = document.activeElement;
+  document.getElementById("sheet-title").textContent = c.nav + ": behind this clip";
+  document.getElementById("sheet-note").textContent = c.note;
+  document.getElementById("sheet-sql").textContent = c.sql;
+  sheet.hidden = false;
+  requestAnimationFrame(() => { sheet.classList.add("open"); scrim.classList.add("open"); document.getElementById("sheet-close").focus(); });
+}
+function closeSheet() {
+  sheet.classList.remove("open"); scrim.classList.remove("open");
+  setTimeout(() => { sheet.hidden = true; }, 300);
+  if (lastFocus) lastFocus.focus();
+}
+document.getElementById("sheet-close").addEventListener("click", closeSheet);
+scrim.addEventListener("click", closeSheet);
+
+clipsEl.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const clip = b.closest(".clip"), c = CLIPS[+clip.dataset.i];
+  const act = b.dataset.act;
+  if (act === "save") {
+    const on = b.getAttribute("aria-pressed") !== "true";
+    b.setAttribute("aria-pressed", on); on ? saved.add(c.id) : saved.delete(c.id);
+    try { localStorage.setItem("opsdesk.saved", JSON.stringify([...saved])); } catch {}
+    toast(on ? "Saved" : "Removed from saved");
+  } else if (act === "sql") openSheet(c);
+  else if (act === "share") {
+    const url = location.href.split("#")[0] + "#" + c.id;
+    (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => toast("Link copied"), () => toast("Link: #" + c.id));
+  } else if (act === "raw") {
+    const on = b.getAttribute("aria-pressed") !== "true"; b.setAttribute("aria-pressed", on); spikeChart(on);
+  } else if (act === "sandbox") {
+    const on = b.getAttribute("aria-pressed") !== "true"; b.setAttribute("aria-pressed", on); adoptBars(on);
+    clip.classList.remove("play");
+  } else if (b.dataset.exc) {
+    excFilter = b.dataset.exc; excList();
+  } else if (b.classList.contains("flip")) {
+    b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true");
+  }
+});
+
+/* ---------- views ---------- */
+const app = document.getElementById("app");
+function view(desk) {
+  app.classList.toggle("desk", desk);
+  document.getElementById("v-feed").setAttribute("aria-pressed", !desk);
+  document.getElementById("v-desk").setAttribute("aria-pressed", desk);
+  try { localStorage.setItem("opsdesk.view", desk ? "desk" : "feed"); } catch {}
+}
+document.getElementById("v-feed").addEventListener("click", () => view(false));
+document.getElementById("v-desk").addEventListener("click", () => view(true));
+try { if (localStorage.getItem("opsdesk.view") === "desk") view(true); } catch {}
+
+/* deep link */
+const h = location.hash.slice(1), hi = CLIPS.findIndex(c => c.id === h);
+if (hi > 0) requestAnimationFrame(() => slots[hi].scrollIntoView({ block: "start" }));
+</script>

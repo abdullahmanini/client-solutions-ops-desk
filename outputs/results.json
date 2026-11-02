@@ -1,0 +1,4521 @@
+{
+ "as_of": "2026-10-04",
+ "quarters": {
+  "2026-Q2": {
+   "quarter": "2026-Q2",
+   "spend": 34422513.55,
+   "impressions": 4944493003,
+   "clicks": 52793463,
+   "conversions": 1571591,
+   "conversion_value": 81732352.65,
+   "active_advertisers": 152,
+   "cpm": 6.961788302484124,
+   "ctr": 0.010677224736281014,
+   "cvr": 0.029768666624502355,
+   "cpa": 21.90297192462924,
+   "roas": 2.374386534303507
+  },
+  "2026-Q3": {
+   "quarter": "2026-Q3",
+   "spend": 38012242.47,
+   "impressions": 5509348023,
+   "clicks": 58953649,
+   "conversions": 1762257,
+   "conversion_value": 95434072.69,
+   "active_advertisers": 149,
+   "cpm": 6.899589989833539,
+   "ctr": 0.010700658000526535,
+   "cvr": 0.02989224636459738,
+   "cpa": 21.570203704680985,
+   "roas": 2.5106141203144863
+  }
+ },
+ "weekly": [
+  {
+   "week_num": 1,
+   "week_start": "2026-04-06",
+   "quarter": "2026-Q2",
+   "raw_spend": 2533480.84,
+   "spend": 2533480.84,
+   "impressions": 363054388,
+   "clicks": 3858063,
+   "conversions": 114322,
+   "conversion_value": 5850076.47,
+   "active_advertisers": 152
+  },
+  {
+   "week_num": 2,
+   "week_start": "2026-04-13",
+   "quarter": "2026-Q2",
+   "raw_spend": 2590887.08,
+   "spend": 2590887.08,
+   "impressions": 380139624,
+   "clicks": 4058115,
+   "conversions": 121206,
+   "conversion_value": 6468130.49,
+   "active_advertisers": 152
+  },
+  {
+   "week_num": 3,
+   "week_start": "2026-04-20",
+   "quarter": "2026-Q2",
+   "raw_spend": 2551923.88,
+   "spend": 2551923.88,
+   "impressions": 361452226,
+   "clicks": 3794550,
+   "conversions": 111269,
+   "conversion_value": 5775341.59,
+   "active_advertisers": 152
+  },
+  {
+   "week_num": 4,
+   "week_start": "2026-04-27",
+   "quarter": "2026-Q2",
+   "raw_spend": 2609209.25,
+   "spend": 2609209.25,
+   "impressions": 380667196,
+   "clicks": 4091698,
+   "conversions": 120353,
+   "conversion_value": 6184685.07,
+   "active_advertisers": 152
+  },
+  {
+   "week_num": 5,
+   "week_start": "2026-05-04",
+   "quarter": "2026-Q2",
+   "raw_spend": 2649905.19,
+   "spend": 2649905.19,
+   "impressions": 377478884,
+   "clicks": 4093446,
+   "conversions": 122076,
+   "conversion_value": 6330137.78,
+   "active_advertisers": 152
+  },
+  {
+   "week_num": 6,
+   "week_start": "2026-05-11",
+   "quarter": "2026-Q2",
+   "raw_spend": 2612213.88,
+   "spend": 2612213.88,
+   "impressions": 379025497,
+   "clicks": 4049486,
+   "conversions": 123223,
+   "conversion_value": 6115412.41,
+   "active_advertisers": 152
+  },
+  {
+   "week_num": 7,
+   "week_start": "2026-05-18",
+   "quarter": "2026-Q2",
+   "raw_spend": 2631275.29,
+   "spend": 2631275.29,
+   "impressions": 373860635,
+   "clicks": 3949919,
+   "conversions": 117074,
+   "conversion_value": 5924497.65,
+   "active_advertisers": 151
+  },
+  {
+   "week_num": 8,
+   "week_start": "2026-05-25",
+   "quarter": "2026-Q2",
+   "raw_spend": 2692172.46,
+   "spend": 2692172.46,
+   "impressions": 392202057,
+   "clicks": 4167100,
+   "conversions": 124957,
+   "conversion_value": 6441233.4,
+   "active_advertisers": 151
+  },
+  {
+   "week_num": 9,
+   "week_start": "2026-06-01",
+   "quarter": "2026-Q2",
+   "raw_spend": 2675297.21,
+   "spend": 2675297.21,
+   "impressions": 383928198,
+   "clicks": 4077352,
+   "conversions": 119877,
+   "conversion_value": 6536388.71,
+   "active_advertisers": 151
+  },
+  {
+   "week_num": 10,
+   "week_start": "2026-06-08",
+   "quarter": "2026-Q2",
+   "raw_spend": 2706788.86,
+   "spend": 2706788.86,
+   "impressions": 387799370,
+   "clicks": 4145015,
+   "conversions": 124005,
+   "conversion_value": 6580765.51,
+   "active_advertisers": 151
+  },
+  {
+   "week_num": 11,
+   "week_start": "2026-06-15",
+   "quarter": "2026-Q2",
+   "raw_spend": 2718296.27,
+   "spend": 2718296.27,
+   "impressions": 383971290,
+   "clicks": 4077107,
+   "conversions": 118775,
+   "conversion_value": 6394852.64,
+   "active_advertisers": 149
+  },
+  {
+   "week_num": 12,
+   "week_start": "2026-06-22",
+   "quarter": "2026-Q2",
+   "raw_spend": 2715657.14,
+   "spend": 2715657.14,
+   "impressions": 390442890,
+   "clicks": 4218353,
+   "conversions": 127548,
+   "conversion_value": 6600382.14,
+   "active_advertisers": 149
+  },
+  {
+   "week_num": 13,
+   "week_start": "2026-06-29",
+   "quarter": "2026-Q2",
+   "raw_spend": 2735406.2,
+   "spend": 2735406.2,
+   "impressions": 390470748,
+   "clicks": 4213259,
+   "conversions": 126906,
+   "conversion_value": 6530448.79,
+   "active_advertisers": 149
+  },
+  {
+   "week_num": 14,
+   "week_start": "2026-07-06",
+   "quarter": "2026-Q3",
+   "raw_spend": 2531285.37,
+   "spend": 2531285.37,
+   "impressions": 369947748,
+   "clicks": 3966115,
+   "conversions": 117949,
+   "conversion_value": 6233929.88,
+   "active_advertisers": 149
+  },
+  {
+   "week_num": 15,
+   "week_start": "2026-07-13",
+   "quarter": "2026-Q3",
+   "raw_spend": 2559554.6,
+   "spend": 2559554.6,
+   "impressions": 375091125,
+   "clicks": 4089482,
+   "conversions": 122336,
+   "conversion_value": 6539213.46,
+   "active_advertisers": 149
+  },
+  {
+   "week_num": 16,
+   "week_start": "2026-07-20",
+   "quarter": "2026-Q3",
+   "raw_spend": 2543398.73,
+   "spend": 2543398.73,
+   "impressions": 369711514,
+   "clicks": 3932359,
+   "conversions": 118054,
+   "conversion_value": 6414137.22,
+   "active_advertisers": 148
+  },
+  {
+   "week_num": 17,
+   "week_start": "2026-07-27",
+   "quarter": "2026-Q3",
+   "raw_spend": 3748435.09,
+   "spend": 2560579.77,
+   "impressions": 367937773,
+   "clicks": 4003267,
+   "conversions": 119804,
+   "conversion_value": 6787182.25,
+   "active_advertisers": 146
+  },
+  {
+   "week_num": 18,
+   "week_start": "2026-08-03",
+   "quarter": "2026-Q3",
+   "raw_spend": 3135171.94,
+   "spend": 3135171.94,
+   "impressions": 448134099,
+   "clicks": 4706188,
+   "conversions": 142808,
+   "conversion_value": 7614796.85,
+   "active_advertisers": 146
+  },
+  {
+   "week_num": 19,
+   "week_start": "2026-08-10",
+   "quarter": "2026-Q3",
+   "raw_spend": 3147236.83,
+   "spend": 3147236.83,
+   "impressions": 455330313,
+   "clicks": 4873810,
+   "conversions": 145739,
+   "conversion_value": 8094249.93,
+   "active_advertisers": 146
+  },
+  {
+   "week_num": 20,
+   "week_start": "2026-08-17",
+   "quarter": "2026-Q3",
+   "raw_spend": 3127673.23,
+   "spend": 3127673.23,
+   "impressions": 454220900,
+   "clicks": 4924334,
+   "conversions": 146648,
+   "conversion_value": 7943182.16,
+   "active_advertisers": 145
+  },
+  {
+   "week_num": 21,
+   "week_start": "2026-08-24",
+   "quarter": "2026-Q3",
+   "raw_spend": 3118059.89,
+   "spend": 3118059.89,
+   "impressions": 454987699,
+   "clicks": 4864250,
+   "conversions": 146604,
+   "conversion_value": 7872344.02,
+   "active_advertisers": 144
+  },
+  {
+   "week_num": 22,
+   "week_start": "2026-08-31",
+   "quarter": "2026-Q3",
+   "raw_spend": 3140882.36,
+   "spend": 3140882.36,
+   "impressions": 453559636,
+   "clicks": 4834804,
+   "conversions": 146378,
+   "conversion_value": 7888820.78,
+   "active_advertisers": 142
+  },
+  {
+   "week_num": 23,
+   "week_start": "2026-09-07",
+   "quarter": "2026-Q3",
+   "raw_spend": 2995983.8,
+   "spend": 2995983.8,
+   "impressions": 433662377,
+   "clicks": 4593278,
+   "conversions": 135866,
+   "conversion_value": 7317495.16,
+   "active_advertisers": 142
+  },
+  {
+   "week_num": 24,
+   "week_start": "2026-09-14",
+   "quarter": "2026-Q3",
+   "raw_spend": 3024817.54,
+   "spend": 3024817.54,
+   "impressions": 433610804,
+   "clicks": 4681577,
+   "conversions": 139742,
+   "conversion_value": 7683633.51,
+   "active_advertisers": 142
+  },
+  {
+   "week_num": 25,
+   "week_start": "2026-09-21",
+   "quarter": "2026-Q3",
+   "raw_spend": 3103867.01,
+   "spend": 3103867.01,
+   "impressions": 456710594,
+   "clicks": 4880233,
+   "conversions": 139548,
+   "conversion_value": 7362566.7,
+   "active_advertisers": 142
+  },
+  {
+   "week_num": 26,
+   "week_start": "2026-09-28",
+   "quarter": "2026-Q3",
+   "raw_spend": 3023731.4,
+   "spend": 3023731.4,
+   "impressions": 436443441,
+   "clicks": 4603952,
+   "conversions": 140781,
+   "conversion_value": 7682520.7700000005,
+   "active_advertisers": 142
+  }
+ ],
+ "week17": {
+  "raw": 3748435.09,
+  "clean": 2560579.77,
+  "inflation": 1187855.3199999998,
+  "duplicate_rows": 158
+ },
+ "product_quarter": [
+  {
+   "product": "Auto-Campaigns",
+   "quarter": "2026-Q2",
+   "spend": 39897.06,
+   "advertisers": 6,
+   "cpa": 10.716373892022562,
+   "roas": 2.564883728274715
+  },
+  {
+   "product": "Auto-Campaigns",
+   "quarter": "2026-Q3",
+   "spend": 1686836.6199999999,
+   "advertisers": 54,
+   "cpa": 14.562031630380357,
+   "roas": 2.7862926345528356
+  },
+  {
+   "product": "Boosted Posts",
+   "quarter": "2026-Q2",
+   "spend": 3449739.06,
+   "advertisers": 76,
+   "cpa": 18.9045443386197,
+   "roas": 2.4453040427933117
+  },
+  {
+   "product": "Boosted Posts",
+   "quarter": "2026-Q3",
+   "spend": 3713500.39,
+   "advertisers": 73,
+   "cpa": 19.268989513229105,
+   "roas": 2.4515439111075463
+  },
+  {
+   "product": "In-Feed Video",
+   "quarter": "2026-Q2",
+   "spend": 27150615.46,
+   "advertisers": 152,
+   "cpa": 24.16177920994998,
+   "roas": 2.187624711767768
+  },
+  {
+   "product": "In-Feed Video",
+   "quarter": "2026-Q3",
+   "spend": 28463511.81,
+   "advertisers": 149,
+   "cpa": 24.324482237029326,
+   "roas": 2.307427467081758
+  },
+  {
+   "product": "Lift Studies",
+   "quarter": "2026-Q2",
+   "spend": 482183.53,
+   "advertisers": 17,
+   "cpa": 32.33526891094421,
+   "roas": 1.8101060399138893
+  },
+  {
+   "product": "Lift Studies",
+   "quarter": "2026-Q3",
+   "spend": 532152.75,
+   "advertisers": 17,
+   "cpa": 32.2536365840354,
+   "roas": 1.9019670949741405
+  },
+  {
+   "product": "Search Placements",
+   "quarter": "2026-Q2",
+   "spend": 1485392.76,
+   "advertisers": 39,
+   "cpa": 11.156036260674293,
+   "roas": 4.600972499690924
+  },
+  {
+   "product": "Search Placements",
+   "quarter": "2026-Q3",
+   "spend": 1611568.8,
+   "advertisers": 38,
+   "cpa": 11.33383125514273,
+   "roas": 4.954371045157985
+  },
+  {
+   "product": "Shoppable Video",
+   "quarter": "2026-Q2",
+   "spend": 1814685.68,
+   "advertisers": 31,
+   "cpa": 15.9706905109746,
+   "roas": 3.3570268653908153
+  },
+  {
+   "product": "Shoppable Video",
+   "quarter": "2026-Q3",
+   "spend": 2004672.1,
+   "advertisers": 31,
+   "cpa": 16.05651616727139,
+   "roas": 3.4700473907927383
+  }
+ ],
+ "adoption_weekly": [
+  {
+   "week_num": 4,
+   "product": "Boosted Posts",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 76,
+   "adopters_clean": 76,
+   "rate_naive": 0.475,
+   "rate_clean": 0.5
+  },
+  {
+   "week_num": 4,
+   "product": "In-Feed Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 160,
+   "adopters_clean": 152,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 4,
+   "product": "Lift Studies",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10625,
+   "rate_clean": 0.1118421052631579
+  },
+  {
+   "week_num": 4,
+   "product": "Search Placements",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 39,
+   "adopters_clean": 39,
+   "rate_naive": 0.24375,
+   "rate_clean": 0.2565789473684211
+  },
+  {
+   "week_num": 4,
+   "product": "Shoppable Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19375,
+   "rate_clean": 0.20394736842105263
+  },
+  {
+   "week_num": 5,
+   "product": "Boosted Posts",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 76,
+   "adopters_clean": 76,
+   "rate_naive": 0.475,
+   "rate_clean": 0.5
+  },
+  {
+   "week_num": 5,
+   "product": "In-Feed Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 160,
+   "adopters_clean": 152,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 5,
+   "product": "Lift Studies",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10625,
+   "rate_clean": 0.1118421052631579
+  },
+  {
+   "week_num": 5,
+   "product": "Search Placements",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 39,
+   "adopters_clean": 39,
+   "rate_naive": 0.24375,
+   "rate_clean": 0.2565789473684211
+  },
+  {
+   "week_num": 5,
+   "product": "Shoppable Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19375,
+   "rate_clean": 0.20394736842105263
+  },
+  {
+   "week_num": 6,
+   "product": "Boosted Posts",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 76,
+   "adopters_clean": 76,
+   "rate_naive": 0.475,
+   "rate_clean": 0.5
+  },
+  {
+   "week_num": 6,
+   "product": "In-Feed Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 160,
+   "adopters_clean": 152,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 6,
+   "product": "Lift Studies",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10625,
+   "rate_clean": 0.1118421052631579
+  },
+  {
+   "week_num": 6,
+   "product": "Search Placements",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 39,
+   "adopters_clean": 39,
+   "rate_naive": 0.24375,
+   "rate_clean": 0.2565789473684211
+  },
+  {
+   "week_num": 6,
+   "product": "Shoppable Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19375,
+   "rate_clean": 0.20394736842105263
+  },
+  {
+   "week_num": 7,
+   "product": "Boosted Posts",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 76,
+   "adopters_clean": 76,
+   "rate_naive": 0.475,
+   "rate_clean": 0.5
+  },
+  {
+   "week_num": 7,
+   "product": "In-Feed Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 160,
+   "adopters_clean": 152,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 7,
+   "product": "Lift Studies",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10625,
+   "rate_clean": 0.1118421052631579
+  },
+  {
+   "week_num": 7,
+   "product": "Search Placements",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 39,
+   "adopters_clean": 39,
+   "rate_naive": 0.24375,
+   "rate_clean": 0.2565789473684211
+  },
+  {
+   "week_num": 7,
+   "product": "Shoppable Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19375,
+   "rate_clean": 0.20394736842105263
+  },
+  {
+   "week_num": 8,
+   "product": "Boosted Posts",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 76,
+   "adopters_clean": 76,
+   "rate_naive": 0.475,
+   "rate_clean": 0.5
+  },
+  {
+   "week_num": 8,
+   "product": "In-Feed Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 160,
+   "adopters_clean": 152,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 8,
+   "product": "Lift Studies",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10625,
+   "rate_clean": 0.1118421052631579
+  },
+  {
+   "week_num": 8,
+   "product": "Search Placements",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 39,
+   "adopters_clean": 39,
+   "rate_naive": 0.24375,
+   "rate_clean": 0.2565789473684211
+  },
+  {
+   "week_num": 8,
+   "product": "Shoppable Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19375,
+   "rate_clean": 0.20394736842105263
+  },
+  {
+   "week_num": 9,
+   "product": "Boosted Posts",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 76,
+   "adopters_clean": 76,
+   "rate_naive": 0.475,
+   "rate_clean": 0.5
+  },
+  {
+   "week_num": 9,
+   "product": "In-Feed Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 160,
+   "adopters_clean": 152,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 9,
+   "product": "Lift Studies",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10625,
+   "rate_clean": 0.1118421052631579
+  },
+  {
+   "week_num": 9,
+   "product": "Search Placements",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.2375,
+   "rate_clean": 0.25
+  },
+  {
+   "week_num": 9,
+   "product": "Shoppable Video",
+   "active_all": 160,
+   "active_clean": 152,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19375,
+   "rate_clean": 0.20394736842105263
+  },
+  {
+   "week_num": 10,
+   "product": "Auto-Campaigns",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 0,
+   "adopters_clean": 0,
+   "rate_naive": 0.0,
+   "rate_clean": 0.0
+  },
+  {
+   "week_num": 10,
+   "product": "Boosted Posts",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 75,
+   "adopters_clean": 75,
+   "rate_naive": 0.4716981132075472,
+   "rate_clean": 0.4966887417218543
+  },
+  {
+   "week_num": 10,
+   "product": "In-Feed Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 159,
+   "adopters_clean": 151,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 10,
+   "product": "Lift Studies",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.1069182389937107,
+   "rate_clean": 0.11258278145695365
+  },
+  {
+   "week_num": 10,
+   "product": "Search Placements",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.2389937106918239,
+   "rate_clean": 0.25165562913907286
+  },
+  {
+   "week_num": 10,
+   "product": "Shoppable Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.1949685534591195,
+   "rate_clean": 0.2052980132450331
+  },
+  {
+   "week_num": 11,
+   "product": "Auto-Campaigns",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 1,
+   "adopters_clean": 1,
+   "rate_naive": 0.006289308176100629,
+   "rate_clean": 0.006622516556291391
+  },
+  {
+   "week_num": 11,
+   "product": "Boosted Posts",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 75,
+   "adopters_clean": 75,
+   "rate_naive": 0.4716981132075472,
+   "rate_clean": 0.4966887417218543
+  },
+  {
+   "week_num": 11,
+   "product": "In-Feed Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 159,
+   "adopters_clean": 151,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 11,
+   "product": "Lift Studies",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.1069182389937107,
+   "rate_clean": 0.11258278145695365
+  },
+  {
+   "week_num": 11,
+   "product": "Search Placements",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.2389937106918239,
+   "rate_clean": 0.25165562913907286
+  },
+  {
+   "week_num": 11,
+   "product": "Shoppable Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.1949685534591195,
+   "rate_clean": 0.2052980132450331
+  },
+  {
+   "week_num": 12,
+   "product": "Auto-Campaigns",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 11,
+   "adopters_clean": 3,
+   "rate_naive": 0.06918238993710692,
+   "rate_clean": 0.019867549668874173
+  },
+  {
+   "week_num": 12,
+   "product": "Boosted Posts",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 75,
+   "adopters_clean": 75,
+   "rate_naive": 0.4716981132075472,
+   "rate_clean": 0.4966887417218543
+  },
+  {
+   "week_num": 12,
+   "product": "In-Feed Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 159,
+   "adopters_clean": 151,
+   "rate_naive": 1.0,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 12,
+   "product": "Lift Studies",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.1069182389937107,
+   "rate_clean": 0.11258278145695365
+  },
+  {
+   "week_num": 12,
+   "product": "Search Placements",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.2389937106918239,
+   "rate_clean": 0.25165562913907286
+  },
+  {
+   "week_num": 12,
+   "product": "Shoppable Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.1949685534591195,
+   "rate_clean": 0.2052980132450331
+  },
+  {
+   "week_num": 13,
+   "product": "Auto-Campaigns",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 14,
+   "adopters_clean": 6,
+   "rate_naive": 0.0880503144654088,
+   "rate_clean": 0.039735099337748346
+  },
+  {
+   "week_num": 13,
+   "product": "Boosted Posts",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 75,
+   "adopters_clean": 75,
+   "rate_naive": 0.4716981132075472,
+   "rate_clean": 0.4966887417218543
+  },
+  {
+   "week_num": 13,
+   "product": "In-Feed Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 151,
+   "adopters_clean": 151,
+   "rate_naive": 0.949685534591195,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 13,
+   "product": "Lift Studies",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.1069182389937107,
+   "rate_clean": 0.11258278145695365
+  },
+  {
+   "week_num": 13,
+   "product": "Search Placements",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.2389937106918239,
+   "rate_clean": 0.25165562913907286
+  },
+  {
+   "week_num": 13,
+   "product": "Shoppable Video",
+   "active_all": 159,
+   "active_clean": 151,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.1949685534591195,
+   "rate_clean": 0.2052980132450331
+  },
+  {
+   "week_num": 14,
+   "product": "Auto-Campaigns",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 18,
+   "adopters_clean": 10,
+   "rate_naive": 0.11464968152866242,
+   "rate_clean": 0.06711409395973154
+  },
+  {
+   "week_num": 14,
+   "product": "Boosted Posts",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 73,
+   "adopters_clean": 73,
+   "rate_naive": 0.46496815286624205,
+   "rate_clean": 0.4899328859060403
+  },
+  {
+   "week_num": 14,
+   "product": "In-Feed Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 149,
+   "adopters_clean": 149,
+   "rate_naive": 0.9490445859872612,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 14,
+   "product": "Lift Studies",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10828025477707007,
+   "rate_clean": 0.11409395973154363
+  },
+  {
+   "week_num": 14,
+   "product": "Search Placements",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24203821656050956,
+   "rate_clean": 0.2550335570469799
+  },
+  {
+   "week_num": 14,
+   "product": "Shoppable Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19745222929936307,
+   "rate_clean": 0.2080536912751678
+  },
+  {
+   "week_num": 15,
+   "product": "Auto-Campaigns",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 21,
+   "adopters_clean": 13,
+   "rate_naive": 0.1337579617834395,
+   "rate_clean": 0.087248322147651
+  },
+  {
+   "week_num": 15,
+   "product": "Boosted Posts",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 73,
+   "adopters_clean": 73,
+   "rate_naive": 0.46496815286624205,
+   "rate_clean": 0.4899328859060403
+  },
+  {
+   "week_num": 15,
+   "product": "In-Feed Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 149,
+   "adopters_clean": 149,
+   "rate_naive": 0.9490445859872612,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 15,
+   "product": "Lift Studies",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10828025477707007,
+   "rate_clean": 0.11409395973154363
+  },
+  {
+   "week_num": 15,
+   "product": "Search Placements",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24203821656050956,
+   "rate_clean": 0.2550335570469799
+  },
+  {
+   "week_num": 15,
+   "product": "Shoppable Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19745222929936307,
+   "rate_clean": 0.2080536912751678
+  },
+  {
+   "week_num": 16,
+   "product": "Auto-Campaigns",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 28,
+   "adopters_clean": 20,
+   "rate_naive": 0.17834394904458598,
+   "rate_clean": 0.1342281879194631
+  },
+  {
+   "week_num": 16,
+   "product": "Boosted Posts",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 73,
+   "adopters_clean": 73,
+   "rate_naive": 0.46496815286624205,
+   "rate_clean": 0.4899328859060403
+  },
+  {
+   "week_num": 16,
+   "product": "In-Feed Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 149,
+   "adopters_clean": 149,
+   "rate_naive": 0.9490445859872612,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 16,
+   "product": "Lift Studies",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10828025477707007,
+   "rate_clean": 0.11409395973154363
+  },
+  {
+   "week_num": 16,
+   "product": "Search Placements",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24203821656050956,
+   "rate_clean": 0.2550335570469799
+  },
+  {
+   "week_num": 16,
+   "product": "Shoppable Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19745222929936307,
+   "rate_clean": 0.2080536912751678
+  },
+  {
+   "week_num": 17,
+   "product": "Auto-Campaigns",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 32,
+   "adopters_clean": 24,
+   "rate_naive": 0.20382165605095542,
+   "rate_clean": 0.1610738255033557
+  },
+  {
+   "week_num": 17,
+   "product": "Boosted Posts",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 73,
+   "adopters_clean": 73,
+   "rate_naive": 0.46496815286624205,
+   "rate_clean": 0.4899328859060403
+  },
+  {
+   "week_num": 17,
+   "product": "In-Feed Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 149,
+   "adopters_clean": 149,
+   "rate_naive": 0.9490445859872612,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 17,
+   "product": "Lift Studies",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10828025477707007,
+   "rate_clean": 0.11409395973154363
+  },
+  {
+   "week_num": 17,
+   "product": "Search Placements",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24203821656050956,
+   "rate_clean": 0.2550335570469799
+  },
+  {
+   "week_num": 17,
+   "product": "Shoppable Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19745222929936307,
+   "rate_clean": 0.2080536912751678
+  },
+  {
+   "week_num": 18,
+   "product": "Auto-Campaigns",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 32,
+   "adopters_clean": 24,
+   "rate_naive": 0.20382165605095542,
+   "rate_clean": 0.1610738255033557
+  },
+  {
+   "week_num": 18,
+   "product": "Boosted Posts",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 73,
+   "adopters_clean": 73,
+   "rate_naive": 0.46496815286624205,
+   "rate_clean": 0.4899328859060403
+  },
+  {
+   "week_num": 18,
+   "product": "In-Feed Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 149,
+   "adopters_clean": 149,
+   "rate_naive": 0.9490445859872612,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 18,
+   "product": "Lift Studies",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10828025477707007,
+   "rate_clean": 0.11409395973154363
+  },
+  {
+   "week_num": 18,
+   "product": "Search Placements",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24203821656050956,
+   "rate_clean": 0.2550335570469799
+  },
+  {
+   "week_num": 18,
+   "product": "Shoppable Video",
+   "active_all": 157,
+   "active_clean": 149,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.19745222929936307,
+   "rate_clean": 0.2080536912751678
+  },
+  {
+   "week_num": 19,
+   "product": "Auto-Campaigns",
+   "active_all": 156,
+   "active_clean": 148,
+   "adopters_all": 36,
+   "adopters_clean": 28,
+   "rate_naive": 0.23076923076923078,
+   "rate_clean": 0.1891891891891892
+  },
+  {
+   "week_num": 19,
+   "product": "Boosted Posts",
+   "active_all": 156,
+   "active_clean": 148,
+   "adopters_all": 72,
+   "adopters_clean": 72,
+   "rate_naive": 0.46153846153846156,
+   "rate_clean": 0.4864864864864865
+  },
+  {
+   "week_num": 19,
+   "product": "In-Feed Video",
+   "active_all": 156,
+   "active_clean": 148,
+   "adopters_all": 148,
+   "adopters_clean": 148,
+   "rate_naive": 0.9487179487179487,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 19,
+   "product": "Lift Studies",
+   "active_all": 156,
+   "active_clean": 148,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.10897435897435898,
+   "rate_clean": 0.11486486486486487
+  },
+  {
+   "week_num": 19,
+   "product": "Search Placements",
+   "active_all": 156,
+   "active_clean": 148,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24358974358974358,
+   "rate_clean": 0.25675675675675674
+  },
+  {
+   "week_num": 19,
+   "product": "Shoppable Video",
+   "active_all": 156,
+   "active_clean": 148,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.1987179487179487,
+   "rate_clean": 0.20945945945945946
+  },
+  {
+   "week_num": 20,
+   "product": "Auto-Campaigns",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 36,
+   "adopters_clean": 28,
+   "rate_naive": 0.23376623376623376,
+   "rate_clean": 0.1917808219178082
+  },
+  {
+   "week_num": 20,
+   "product": "Boosted Posts",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 70,
+   "adopters_clean": 70,
+   "rate_naive": 0.45454545454545453,
+   "rate_clean": 0.4794520547945205
+  },
+  {
+   "week_num": 20,
+   "product": "In-Feed Video",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 146,
+   "adopters_clean": 146,
+   "rate_naive": 0.948051948051948,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 20,
+   "product": "Lift Studies",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.11038961038961038,
+   "rate_clean": 0.11643835616438356
+  },
+  {
+   "week_num": 20,
+   "product": "Search Placements",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24675324675324675,
+   "rate_clean": 0.2602739726027397
+  },
+  {
+   "week_num": 20,
+   "product": "Shoppable Video",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.2012987012987013,
+   "rate_clean": 0.21232876712328766
+  },
+  {
+   "week_num": 21,
+   "product": "Auto-Campaigns",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 37,
+   "adopters_clean": 29,
+   "rate_naive": 0.24025974025974026,
+   "rate_clean": 0.19863013698630136
+  },
+  {
+   "week_num": 21,
+   "product": "Boosted Posts",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 70,
+   "adopters_clean": 70,
+   "rate_naive": 0.45454545454545453,
+   "rate_clean": 0.4794520547945205
+  },
+  {
+   "week_num": 21,
+   "product": "In-Feed Video",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 147,
+   "adopters_clean": 146,
+   "rate_naive": 0.9545454545454546,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 21,
+   "product": "Lift Studies",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.11038961038961038,
+   "rate_clean": 0.11643835616438356
+  },
+  {
+   "week_num": 21,
+   "product": "Search Placements",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24675324675324675,
+   "rate_clean": 0.2602739726027397
+  },
+  {
+   "week_num": 21,
+   "product": "Shoppable Video",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.2012987012987013,
+   "rate_clean": 0.21232876712328766
+  },
+  {
+   "week_num": 22,
+   "product": "Auto-Campaigns",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 39,
+   "adopters_clean": 31,
+   "rate_naive": 0.2532467532467532,
+   "rate_clean": 0.21232876712328766
+  },
+  {
+   "week_num": 22,
+   "product": "Boosted Posts",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 70,
+   "adopters_clean": 70,
+   "rate_naive": 0.45454545454545453,
+   "rate_clean": 0.4794520547945205
+  },
+  {
+   "week_num": 22,
+   "product": "In-Feed Video",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 147,
+   "adopters_clean": 146,
+   "rate_naive": 0.9545454545454546,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 22,
+   "product": "Lift Studies",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.11038961038961038,
+   "rate_clean": 0.11643835616438356
+  },
+  {
+   "week_num": 22,
+   "product": "Search Placements",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24675324675324675,
+   "rate_clean": 0.2602739726027397
+  },
+  {
+   "week_num": 22,
+   "product": "Shoppable Video",
+   "active_all": 154,
+   "active_clean": 146,
+   "adopters_all": 31,
+   "adopters_clean": 31,
+   "rate_naive": 0.2012987012987013,
+   "rate_clean": 0.21232876712328766
+  },
+  {
+   "week_num": 23,
+   "product": "Auto-Campaigns",
+   "active_all": 153,
+   "active_clean": 145,
+   "adopters_all": 44,
+   "adopters_clean": 36,
+   "rate_naive": 0.2875816993464052,
+   "rate_clean": 0.2482758620689655
+  },
+  {
+   "week_num": 23,
+   "product": "Boosted Posts",
+   "active_all": 153,
+   "active_clean": 145,
+   "adopters_all": 69,
+   "adopters_clean": 69,
+   "rate_naive": 0.45098039215686275,
+   "rate_clean": 0.47586206896551725
+  },
+  {
+   "week_num": 23,
+   "product": "In-Feed Video",
+   "active_all": 153,
+   "active_clean": 145,
+   "adopters_all": 146,
+   "adopters_clean": 145,
+   "rate_naive": 0.954248366013072,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 23,
+   "product": "Lift Studies",
+   "active_all": 153,
+   "active_clean": 145,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.1111111111111111,
+   "rate_clean": 0.11724137931034483
+  },
+  {
+   "week_num": 23,
+   "product": "Search Placements",
+   "active_all": 153,
+   "active_clean": 145,
+   "adopters_all": 38,
+   "adopters_clean": 38,
+   "rate_naive": 0.24836601307189543,
+   "rate_clean": 0.2620689655172414
+  },
+  {
+   "week_num": 23,
+   "product": "Shoppable Video",
+   "active_all": 153,
+   "active_clean": 145,
+   "adopters_all": 30,
+   "adopters_clean": 30,
+   "rate_naive": 0.19607843137254902,
+   "rate_clean": 0.20689655172413793
+  },
+  {
+   "week_num": 24,
+   "product": "Auto-Campaigns",
+   "active_all": 152,
+   "active_clean": 144,
+   "adopters_all": 49,
+   "adopters_clean": 41,
+   "rate_naive": 0.3223684210526316,
+   "rate_clean": 0.2847222222222222
+  },
+  {
+   "week_num": 24,
+   "product": "Boosted Posts",
+   "active_all": 152,
+   "active_clean": 144,
+   "adopters_all": 68,
+   "adopters_clean": 68,
+   "rate_naive": 0.4473684210526316,
+   "rate_clean": 0.4722222222222222
+  },
+  {
+   "week_num": 24,
+   "product": "In-Feed Video",
+   "active_all": 152,
+   "active_clean": 144,
+   "adopters_all": 146,
+   "adopters_clean": 144,
+   "rate_naive": 0.9605263157894737,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 24,
+   "product": "Lift Studies",
+   "active_all": 152,
+   "active_clean": 144,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.1118421052631579,
+   "rate_clean": 0.11805555555555555
+  },
+  {
+   "week_num": 24,
+   "product": "Search Placements",
+   "active_all": 152,
+   "active_clean": 144,
+   "adopters_all": 37,
+   "adopters_clean": 37,
+   "rate_naive": 0.24342105263157895,
+   "rate_clean": 0.2569444444444444
+  },
+  {
+   "week_num": 24,
+   "product": "Shoppable Video",
+   "active_all": 152,
+   "active_clean": 144,
+   "adopters_all": 29,
+   "adopters_clean": 29,
+   "rate_naive": 0.19078947368421054,
+   "rate_clean": 0.2013888888888889
+  },
+  {
+   "week_num": 25,
+   "product": "Auto-Campaigns",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 50,
+   "adopters_clean": 42,
+   "rate_naive": 0.3333333333333333,
+   "rate_clean": 0.29577464788732394
+  },
+  {
+   "week_num": 25,
+   "product": "Boosted Posts",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 68,
+   "adopters_clean": 68,
+   "rate_naive": 0.4533333333333333,
+   "rate_clean": 0.4788732394366197
+  },
+  {
+   "week_num": 25,
+   "product": "In-Feed Video",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 143,
+   "adopters_clean": 142,
+   "rate_naive": 0.9533333333333334,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 25,
+   "product": "Lift Studies",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.11333333333333333,
+   "rate_clean": 0.11971830985915492
+  },
+  {
+   "week_num": 25,
+   "product": "Search Placements",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 35,
+   "adopters_clean": 35,
+   "rate_naive": 0.23333333333333334,
+   "rate_clean": 0.24647887323943662
+  },
+  {
+   "week_num": 25,
+   "product": "Shoppable Video",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 28,
+   "adopters_clean": 28,
+   "rate_naive": 0.18666666666666668,
+   "rate_clean": 0.19718309859154928
+  },
+  {
+   "week_num": 26,
+   "product": "Auto-Campaigns",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 49,
+   "adopters_clean": 41,
+   "rate_naive": 0.32666666666666666,
+   "rate_clean": 0.2887323943661972
+  },
+  {
+   "week_num": 26,
+   "product": "Boosted Posts",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 68,
+   "adopters_clean": 68,
+   "rate_naive": 0.4533333333333333,
+   "rate_clean": 0.4788732394366197
+  },
+  {
+   "week_num": 26,
+   "product": "In-Feed Video",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 142,
+   "adopters_clean": 142,
+   "rate_naive": 0.9466666666666667,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 26,
+   "product": "Lift Studies",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.11333333333333333,
+   "rate_clean": 0.11971830985915492
+  },
+  {
+   "week_num": 26,
+   "product": "Search Placements",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 35,
+   "adopters_clean": 35,
+   "rate_naive": 0.23333333333333334,
+   "rate_clean": 0.24647887323943662
+  },
+  {
+   "week_num": 26,
+   "product": "Shoppable Video",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 28,
+   "adopters_clean": 28,
+   "rate_naive": 0.18666666666666668,
+   "rate_clean": 0.19718309859154928
+  }
+ ],
+ "adoption_last": [
+  {
+   "week_num": 26,
+   "product": "Auto-Campaigns",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 49,
+   "adopters_clean": 41,
+   "rate_naive": 0.32666666666666666,
+   "rate_clean": 0.2887323943661972
+  },
+  {
+   "week_num": 26,
+   "product": "Boosted Posts",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 68,
+   "adopters_clean": 68,
+   "rate_naive": 0.4533333333333333,
+   "rate_clean": 0.4788732394366197
+  },
+  {
+   "week_num": 26,
+   "product": "In-Feed Video",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 142,
+   "adopters_clean": 142,
+   "rate_naive": 0.9466666666666667,
+   "rate_clean": 1.0
+  },
+  {
+   "week_num": 26,
+   "product": "Lift Studies",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 17,
+   "adopters_clean": 17,
+   "rate_naive": 0.11333333333333333,
+   "rate_clean": 0.11971830985915492
+  },
+  {
+   "week_num": 26,
+   "product": "Search Placements",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 35,
+   "adopters_clean": 35,
+   "rate_naive": 0.23333333333333334,
+   "rate_clean": 0.24647887323943662
+  },
+  {
+   "week_num": 26,
+   "product": "Shoppable Video",
+   "active_all": 150,
+   "active_clean": 142,
+   "adopters_all": 28,
+   "adopters_clean": 28,
+   "rate_naive": 0.18666666666666668,
+   "rate_clean": 0.19718309859154928
+  }
+ ],
+ "auto_funnel": {
+  "pitched": 103,
+  "tested": 54,
+  "adopted": 41,
+  "sustained": 27,
+  "eligible": 149
+ },
+ "auto_by_csm": [
+  {
+   "csm_name": "Hana Kim",
+   "eligible": 27,
+   "pitched": 19,
+   "tested": 13,
+   "adopted": 11,
+   "sustained": 8,
+   "pitch_rate": 0.7037037037037037,
+   "adoption_rate": 0.4074074074074074,
+   "test_rate_when_pitched": 0.6842105263157895
+  },
+  {
+   "csm_name": "Elena Sokolova",
+   "eligible": 31,
+   "pitched": 25,
+   "tested": 13,
+   "adopted": 9,
+   "sustained": 5,
+   "pitch_rate": 0.8064516129032258,
+   "adoption_rate": 0.2903225806451613,
+   "test_rate_when_pitched": 0.52
+  },
+  {
+   "csm_name": "Luis Ortega",
+   "eligible": 25,
+   "pitched": 18,
+   "tested": 9,
+   "adopted": 7,
+   "sustained": 4,
+   "pitch_rate": 0.72,
+   "adoption_rate": 0.28,
+   "test_rate_when_pitched": 0.5
+  },
+  {
+   "csm_name": "Daniel Osei",
+   "eligible": 18,
+   "pitched": 16,
+   "tested": 7,
+   "adopted": 5,
+   "sustained": 3,
+   "pitch_rate": 0.8888888888888888,
+   "adoption_rate": 0.2777777777777778,
+   "test_rate_when_pitched": 0.4375
+  },
+  {
+   "csm_name": "Priya Natarajan",
+   "eligible": 20,
+   "pitched": 15,
+   "tested": 8,
+   "adopted": 5,
+   "sustained": 4,
+   "pitch_rate": 0.75,
+   "adoption_rate": 0.25,
+   "test_rate_when_pitched": 0.5333333333333333
+  },
+  {
+   "csm_name": "Marcus Bell",
+   "eligible": 28,
+   "pitched": 10,
+   "tested": 4,
+   "adopted": 4,
+   "sustained": 3,
+   "pitch_rate": 0.35714285714285715,
+   "adoption_rate": 0.14285714285714285,
+   "test_rate_when_pitched": 0.4
+  }
+ ],
+ "auto_by_vertical": [
+  {
+   "vertical": "Gaming",
+   "eligible": 26,
+   "pitched": 21,
+   "tested": 16,
+   "adopted": 13,
+   "test_rate_when_pitched": 0.7619047619047619
+  },
+  {
+   "vertical": "Retail",
+   "eligible": 26,
+   "pitched": 18,
+   "tested": 12,
+   "adopted": 8,
+   "test_rate_when_pitched": 0.6666666666666666
+  },
+  {
+   "vertical": "Entertainment",
+   "eligible": 18,
+   "pitched": 9,
+   "tested": 5,
+   "adopted": 3,
+   "test_rate_when_pitched": 0.5555555555555556
+  },
+  {
+   "vertical": "Financial Services",
+   "eligible": 12,
+   "pitched": 8,
+   "tested": 4,
+   "adopted": 4,
+   "test_rate_when_pitched": 0.5
+  },
+  {
+   "vertical": "Travel",
+   "eligible": 11,
+   "pitched": 9,
+   "tested": 4,
+   "adopted": 3,
+   "test_rate_when_pitched": 0.4444444444444444
+  },
+  {
+   "vertical": "CPG",
+   "eligible": 23,
+   "pitched": 14,
+   "tested": 6,
+   "adopted": 5,
+   "test_rate_when_pitched": 0.42857142857142855
+  },
+  {
+   "vertical": "Telecom",
+   "eligible": 18,
+   "pitched": 14,
+   "tested": 5,
+   "adopted": 4,
+   "test_rate_when_pitched": 0.35714285714285715
+  },
+  {
+   "vertical": "Auto",
+   "eligible": 15,
+   "pitched": 10,
+   "tested": 2,
+   "adopted": 1,
+   "test_rate_when_pitched": 0.2
+  }
+ ],
+ "exceptions": [
+  {
+   "control": "PO number on two advertisers",
+   "severity": "High",
+   "advertiser_id": "ADV046",
+   "advertiser_name": "Granite Telecom",
+   "agency_name": "Cedar & Stone",
+   "po_number": "PO-4108",
+   "amount_usd": 928900.0,
+   "detail": "Same PO number issued to another advertiser"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV059",
+   "advertiser_name": "Lake Cruises",
+   "agency_name": "Harbourline Media",
+   "po_number": "PO-4258",
+   "amount_usd": 191514.95999999996,
+   "detail": "Spent $954,014 on a $762,500 PO (125%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV025",
+   "advertiser_name": "Pine Insurance",
+   "agency_name": "Harbourline Media",
+   "po_number": "PO-4168",
+   "amount_usd": 176008.07999999996,
+   "detail": "Spent $762,808 on a $586,800 PO (129%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV069",
+   "advertiser_name": "Lumen Supply",
+   "agency_name": "Harbourline Media",
+   "po_number": "PO-4288",
+   "amount_usd": 106100.70000000001,
+   "detail": "Spent $422,400 on a $316,300 PO (133%)"
+  },
+  {
+   "control": "PO number on two advertisers",
+   "severity": "High",
+   "advertiser_id": "ADV003",
+   "advertiser_name": "Juniper Trips",
+   "agency_name": "Cedar & Stone",
+   "po_number": "PO-4108",
+   "amount_usd": 104500.0,
+   "detail": "Same PO number issued to another advertiser"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV001",
+   "advertiser_name": "Red Apparel",
+   "agency_name": "Harbourline Media",
+   "po_number": "PO-4102",
+   "amount_usd": 70823.72,
+   "detail": "Spent $242,323 on a $171,500 PO (141%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV054",
+   "advertiser_name": "Lake Lending",
+   "agency_name": "Harbourline Media",
+   "po_number": "PO-4243",
+   "amount_usd": 28336.290000000008,
+   "detail": "Spent $145,636 on a $117,300 PO (124%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV149",
+   "advertiser_name": "Coastal Rail",
+   "agency_name": "Brightwater Group",
+   "po_number": "PO-4500",
+   "amount_usd": 24667.79999999999,
+   "detail": "Spent $188,767 on a $164,100 PO (115%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV043",
+   "advertiser_name": "Blue Studios",
+   "agency_name": "Harbourline Media",
+   "po_number": "PO-4216",
+   "amount_usd": 15691.559999999998,
+   "detail": "Spent $73,591 on a $57,900 PO (127%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV042",
+   "advertiser_name": "Harbor Beverage Co.",
+   "agency_name": "Tidewell Partners",
+   "po_number": "PO-4212",
+   "amount_usd": 11093.540000000008,
+   "detail": "Spent $141,093 on a $130,000 PO (108%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV037",
+   "advertiser_name": "Summit Market",
+   "agency_name": "Direct (no agency)",
+   "po_number": "PO-4197",
+   "amount_usd": 9854.540000000008,
+   "detail": "Spent $139,454 on a $129,600 PO (107%)"
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "advertiser_id": "ADV062",
+   "advertiser_name": "Blue Brands",
+   "agency_name": "Parallel Agency",
+   "po_number": "PO-4266",
+   "amount_usd": 5672.529999999999,
+   "detail": "Spent $141,972 on a $136,300 PO (104%)"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV024",
+   "advertiser_name": "Bright Labs",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 220390.36,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV021",
+   "advertiser_name": "Willow Home",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 69587.26,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV040",
+   "advertiser_name": "Blue Auto Group",
+   "agency_name": "Tidewell Partners",
+   "po_number": null,
+   "amount_usd": 68302.0,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV067",
+   "advertiser_name": "True Brands",
+   "agency_name": "Northgate Collective",
+   "po_number": null,
+   "amount_usd": 63210.52,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Spend on expired PO",
+   "severity": "Medium",
+   "advertiser_id": "ADV149",
+   "advertiser_name": "Coastal Rail",
+   "agency_name": "Brightwater Group",
+   "po_number": "PO-4500",
+   "amount_usd": 33726.520000000004,
+   "detail": "3 weeks booked after the PO ended 2026-06-30"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV038",
+   "advertiser_name": "Summit Foods",
+   "agency_name": "Brightwater Group",
+   "po_number": null,
+   "amount_usd": 30493.45,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV058",
+   "advertiser_name": "Maple Supply",
+   "agency_name": "Parallel Agency",
+   "po_number": null,
+   "amount_usd": 28265.77,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Spend on expired PO",
+   "severity": "Medium",
+   "advertiser_id": "ADV042",
+   "advertiser_name": "Harbor Beverage Co.",
+   "agency_name": "Tidewell Partners",
+   "po_number": "PO-4212",
+   "amount_usd": 26613.239999999998,
+   "detail": "3 weeks booked after the PO ended 2026-06-30"
+  },
+  {
+   "control": "Spend on expired PO",
+   "severity": "Medium",
+   "advertiser_id": "ADV062",
+   "advertiser_name": "Blue Brands",
+   "agency_name": "Parallel Agency",
+   "po_number": "PO-4266",
+   "amount_usd": 26359.58,
+   "detail": "3 weeks booked after the PO ended 2026-06-30"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV083",
+   "advertiser_name": "Prairie Cruises",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 25940.35,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Spend on expired PO",
+   "severity": "Medium",
+   "advertiser_id": "ADV037",
+   "advertiser_name": "Summit Market",
+   "agency_name": "Direct (no agency)",
+   "po_number": "PO-4197",
+   "amount_usd": 25564.35,
+   "detail": "3 weeks booked after the PO ended 2026-06-30"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV088",
+   "advertiser_name": "Oak Studios",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 21793.53,
+   "detail": "4 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "advertiser_id": "ADV121",
+   "advertiser_name": "Willow Networks",
+   "agency_name": "Brightwater Group",
+   "po_number": null,
+   "amount_usd": 18541.12,
+   "detail": "1 invoice-billed weeks with no PO"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV138",
+   "advertiser_name": "Iron Dealers",
+   "agency_name": "Harbourline Media",
+   "po_number": null,
+   "amount_usd": 1337482.06,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV091",
+   "advertiser_name": "Aurora EV",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 721275.28,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV007",
+   "advertiser_name": "River Lending",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 720303.56,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV131",
+   "advertiser_name": "Metro Pantry",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 695694.15,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV048",
+   "advertiser_name": "Maple Beverage Co.",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 626274.46,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV108",
+   "advertiser_name": "Cedar Supply",
+   "agency_name": "Tidewell Partners",
+   "po_number": null,
+   "amount_usd": 622547.13,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV081",
+   "advertiser_name": "Summit Networks",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 618685.39,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV052",
+   "advertiser_name": "River Games",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 580443.18,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV100",
+   "advertiser_name": "Juniper Mobile",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 564355.84,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV120",
+   "advertiser_name": "True Beverage Co.",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 457541.66,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "agency_name": "Northgate Collective",
+   "po_number": null,
+   "amount_usd": 396950.46,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV008",
+   "advertiser_name": "Silver Live",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 340860.63,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV010",
+   "advertiser_name": "Prairie Connect",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 301797.02,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV137",
+   "advertiser_name": "Union Labs",
+   "agency_name": "Brightwater Group",
+   "po_number": null,
+   "amount_usd": 287463.67,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV147",
+   "advertiser_name": "Granite Air",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 268848.87,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV001",
+   "advertiser_name": "Red Apparel",
+   "agency_name": "Harbourline Media",
+   "po_number": null,
+   "amount_usd": 242323.72,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV110",
+   "advertiser_name": "Atlas Records",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 203412.88999999998,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV022",
+   "advertiser_name": "Echo Studios",
+   "agency_name": "Parallel Agency",
+   "po_number": null,
+   "amount_usd": 186549.2,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV012",
+   "advertiser_name": "Summit Play",
+   "agency_name": "Kitestring Media",
+   "po_number": null,
+   "amount_usd": 174846.07,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV033",
+   "advertiser_name": "Metro Apparel",
+   "agency_name": "Tidewell Partners",
+   "po_number": null,
+   "amount_usd": 174785.35,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV080",
+   "advertiser_name": "Echo Brands",
+   "agency_name": "Kitestring Media",
+   "po_number": null,
+   "amount_usd": 170914.45,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV149",
+   "advertiser_name": "Coastal Rail",
+   "agency_name": "Brightwater Group",
+   "po_number": null,
+   "amount_usd": 159767.69,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV150",
+   "advertiser_name": "Aurora Hotels",
+   "agency_name": "Harbourline Media",
+   "po_number": null,
+   "amount_usd": 137151.87,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV066",
+   "advertiser_name": "Pine Pictures",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 136610.65,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV053",
+   "advertiser_name": "Willow Foods",
+   "agency_name": "Parallel Agency",
+   "po_number": null,
+   "amount_usd": 128940.98,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV133",
+   "advertiser_name": "Lumen Outfitters",
+   "agency_name": "Harbourline Media",
+   "po_number": null,
+   "amount_usd": 108802.91,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV070",
+   "advertiser_name": "Union Games",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 108284.42,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV020",
+   "advertiser_name": "Summit Motors",
+   "agency_name": "Tidewell Partners",
+   "po_number": null,
+   "amount_usd": 106033.03,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV117",
+   "advertiser_name": "Copper Motors",
+   "agency_name": "Brightwater Group",
+   "po_number": null,
+   "amount_usd": 104838.65,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV013",
+   "advertiser_name": "Metro Pictures",
+   "agency_name": "Parallel Agency",
+   "po_number": null,
+   "amount_usd": 102524.29000000001,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV083",
+   "advertiser_name": "Prairie Cruises",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 78218.21,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV072",
+   "advertiser_name": "Red Bank",
+   "agency_name": "Direct (no agency)",
+   "po_number": null,
+   "amount_usd": 73515.89,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV088",
+   "advertiser_name": "Oak Studios",
+   "agency_name": "Cedar & Stone",
+   "po_number": null,
+   "amount_usd": 67598.13,
+   "detail": "Spending in September, no Q4 PO on file"
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "advertiser_id": "ADV113",
+   "advertiser_name": "Harbor Brands",
+   "agency_name": "Northgate Collective",
+   "po_number": null,
+   "amount_usd": 40930.59,
+   "detail": "Spending in September, no Q4 PO on file"
+  }
+ ],
+ "exception_summary": [
+  {
+   "control": "PO number on two advertisers",
+   "severity": "High",
+   "n": 2,
+   "amount_usd": 1033400.0
+  },
+  {
+   "control": "Spend above PO",
+   "severity": "High",
+   "n": 10,
+   "amount_usd": 639763.72
+  },
+  {
+   "control": "Missing PO number",
+   "severity": "Medium",
+   "n": 9,
+   "amount_usd": 546524.36
+  },
+  {
+   "control": "Spend on expired PO",
+   "severity": "Medium",
+   "n": 4,
+   "amount_usd": 112263.69
+  },
+  {
+   "control": "No Q4 PO yet",
+   "severity": "Low",
+   "n": 34,
+   "amount_usd": 11046572.35
+  }
+ ],
+ "harbourline": {
+  "n": 6,
+  "over_usd": 588475.3099999999
+ },
+ "attainment": [
+  {
+   "advertiser_id": "ADV006",
+   "advertiser_name": "Lake Music",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 62700.0,
+   "spend": 0,
+   "attainment": 0.0,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV016",
+   "advertiser_name": "True Networks",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 35400.0,
+   "spend": 0,
+   "attainment": 0.0,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV035",
+   "advertiser_name": "Cedar Live",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 64800.0,
+   "spend": 0,
+   "attainment": 0.0,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV029",
+   "advertiser_name": "Prairie EV",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 111800.0,
+   "spend": 15782.98,
+   "attainment": 0.14117155635062612,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV089",
+   "advertiser_name": "Lumen Pictures",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 74200.0,
+   "spend": 12525.91,
+   "attainment": 0.16881280323450135,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV095",
+   "advertiser_name": "Pine Wireless",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 104400.0,
+   "spend": 20602.34,
+   "attainment": 0.1973404214559387,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV065",
+   "advertiser_name": "Summit Home",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 140500.0,
+   "spend": 52462.22,
+   "attainment": 0.37339658362989325,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV099",
+   "advertiser_name": "Bright Mobile",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 98800.0,
+   "spend": 53216.32,
+   "attainment": 0.5386267206477733,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV055",
+   "advertiser_name": "Oak Arcade",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 235400.0,
+   "spend": 127484.34,
+   "attainment": 0.54156474086661,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV121",
+   "advertiser_name": "Willow Networks",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 178800.0,
+   "spend": 105695.28,
+   "attainment": 0.5911369127516779,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV009",
+   "advertiser_name": "Silver Beverage Co.",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 75500.0,
+   "spend": 60360.97,
+   "attainment": 0.7994830463576159,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV132",
+   "advertiser_name": "River Auto Group",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 146200.0,
+   "spend": 117779.17,
+   "attainment": 0.8056030779753762,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV052",
+   "advertiser_name": "River Games",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 712400.0,
+   "spend": 580443.18,
+   "attainment": 0.8147714486243685,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV111",
+   "advertiser_name": "Bright Apparel",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 54600.0,
+   "spend": 44690.8,
+   "attainment": 0.8185128205128206,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV078",
+   "advertiser_name": "Lake Arcade",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 917100.0,
+   "spend": 753016.44,
+   "attainment": 0.8210843310435066,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV036",
+   "advertiser_name": "River Networks",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 144000.0,
+   "spend": 120458.25,
+   "attainment": 0.836515625,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV097",
+   "advertiser_name": "Polar Beverage Co.",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 449700.0,
+   "spend": 380487.51,
+   "attainment": 0.8460918612408272,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV140",
+   "advertiser_name": "Lumen Networks",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 197400.0,
+   "spend": 167171.04,
+   "attainment": 0.8468644376899697,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV103",
+   "advertiser_name": "Cedar Snacks",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 63400.0,
+   "spend": 54198.94,
+   "attainment": 0.8548728706624606,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV127",
+   "advertiser_name": "Copper Dealers",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 93400.0,
+   "spend": 80199.16,
+   "attainment": 0.8586633832976446,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "vertical": "Retail",
+   "tier": "Enterprise",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 460500.0,
+   "spend": 396950.46,
+   "attainment": 0.8619988273615635,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV114",
+   "advertiser_name": "Summit Pantry",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 124300.0,
+   "spend": 107437.89,
+   "attainment": 0.8643434432823813,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV110",
+   "advertiser_name": "Atlas Records",
+   "vertical": "Entertainment",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 235200.0,
+   "spend": 203412.88999999998,
+   "attainment": 0.8648507227891156,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV087",
+   "advertiser_name": "Coastal Live",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 145600.0,
+   "spend": 126535.94,
+   "attainment": 0.869065521978022,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV051",
+   "advertiser_name": "Summit Snacks",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 788500.0,
+   "spend": 693720.69,
+   "attainment": 0.8797979581483829,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV062",
+   "advertiser_name": "Blue Brands",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 137500.0,
+   "spend": 121230.01000000001,
+   "attainment": 0.8816728,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV115",
+   "advertiser_name": "Union Play",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 64700.0,
+   "spend": 57078.549999999996,
+   "attainment": 0.8822032457496135,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV074",
+   "advertiser_name": "Copper Games",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 808300.0,
+   "spend": 714421.69,
+   "attainment": 0.8838570951379437,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV026",
+   "advertiser_name": "Lake Media",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 145200.0,
+   "spend": 128497.98,
+   "attainment": 0.8849723140495868,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV023",
+   "advertiser_name": "Atlas Media",
+   "vertical": "Entertainment",
+   "tier": "Enterprise",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 609200.0,
+   "spend": 541261.37,
+   "attainment": 0.8884789395929087,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV083",
+   "advertiser_name": "Prairie Cruises",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 88000.0,
+   "spend": 78218.21,
+   "attainment": 0.8888432954545455,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV031",
+   "advertiser_name": "Atlas Interactive",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 452300.0,
+   "spend": 402380.27,
+   "attainment": 0.8896313729825338,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV060",
+   "advertiser_name": "Metro Home",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 123500.0,
+   "spend": 110066.75,
+   "attainment": 0.8912287449392713,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV129",
+   "advertiser_name": "Red Networks",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 96100.0,
+   "spend": 85847.24,
+   "attainment": 0.8933115504682623,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV102",
+   "advertiser_name": "North Air",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 140700.0,
+   "spend": 126122.89,
+   "attainment": 0.8963958066808813,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV015",
+   "advertiser_name": "Oak Dealers",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 95200.0,
+   "spend": 85646.74,
+   "attainment": 0.8996506302521009,
+   "status": "Under"
+  },
+  {
+   "advertiser_id": "ADV128",
+   "advertiser_name": "Copper Streaming",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 82300.0,
+   "spend": 74642.22,
+   "attainment": 0.9069528554070474,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV040",
+   "advertiser_name": "Blue Auto Group",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 215900.0,
+   "spend": 196331.69,
+   "attainment": 0.9093640111162575,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV081",
+   "advertiser_name": "Summit Networks",
+   "vertical": "Telecom",
+   "tier": "Enterprise",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 680300.0,
+   "spend": 618685.39,
+   "attainment": 0.909430236660297,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV007",
+   "advertiser_name": "River Lending",
+   "vertical": "Financial Services",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 787000.0,
+   "spend": 720303.56,
+   "attainment": 0.9152522998729352,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV113",
+   "advertiser_name": "Harbor Brands",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 44600.0,
+   "spend": 40930.59,
+   "attainment": 0.9177262331838564,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV098",
+   "advertiser_name": "Union Arcade",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 105900.0,
+   "spend": 97310.48,
+   "attainment": 0.9188902738432483,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV118",
+   "advertiser_name": "Granite Goods",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 52000.0,
+   "spend": 48097.73,
+   "attainment": 0.9249563461538463,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV039",
+   "advertiser_name": "Lake Outfitters",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 108900.0,
+   "spend": 100804.77,
+   "attainment": 0.9256636363636364,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV142",
+   "advertiser_name": "Pine Beverage Co.",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 42900.0,
+   "spend": 39733.78,
+   "attainment": 0.9261953379953379,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV020",
+   "advertiser_name": "Summit Motors",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 114100.0,
+   "spend": 106033.03,
+   "attainment": 0.9292991235758107,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV135",
+   "advertiser_name": "North Live",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 77300.0,
+   "spend": 71874.08,
+   "attainment": 0.9298069857697283,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV061",
+   "advertiser_name": "Union Wireless",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 116000.0,
+   "spend": 108328.59,
+   "attainment": 0.9338671551724138,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV101",
+   "advertiser_name": "Bright Insurance",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 56400.0,
+   "spend": 52906.31,
+   "attainment": 0.9380551418439715,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV137",
+   "advertiser_name": "Union Labs",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 304800.0,
+   "spend": 287463.67,
+   "attainment": 0.9431222769028871,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV070",
+   "advertiser_name": "Union Games",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 114500.0,
+   "spend": 108284.42,
+   "attainment": 0.9457154585152838,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV148",
+   "advertiser_name": "Swift Auto Group",
+   "vertical": "Auto",
+   "tier": "Enterprise",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 360300.0,
+   "spend": 341348.51,
+   "attainment": 0.9474008048848183,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV139",
+   "advertiser_name": "Swift Pictures",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 102200.0,
+   "spend": 96913.29000000001,
+   "attainment": 0.948270939334638,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV130",
+   "advertiser_name": "Willow Apparel",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 102200.0,
+   "spend": 96935.5,
+   "attainment": 0.9484882583170254,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV046",
+   "advertiser_name": "Granite Telecom",
+   "vertical": "Telecom",
+   "tier": "Enterprise",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 862600.0,
+   "spend": 824387.67,
+   "attainment": 0.955700985392998,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV079",
+   "advertiser_name": "Juniper Wireless",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 45700.0,
+   "spend": 43778.5,
+   "attainment": 0.9579540481400438,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV141",
+   "advertiser_name": "Lumen Mobile",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 120200.0,
+   "spend": 115155.23,
+   "attainment": 0.9580301996672212,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV024",
+   "advertiser_name": "Bright Labs",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 702300.0,
+   "spend": 677574.82,
+   "attainment": 0.9647939911718638,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV008",
+   "advertiser_name": "Silver Live",
+   "vertical": "Entertainment",
+   "tier": "Enterprise",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 351700.0,
+   "spend": 340860.63,
+   "attainment": 0.9691800682399773,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV057",
+   "advertiser_name": "Lumen Arcade",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 60700.0,
+   "spend": 58861.53,
+   "attainment": 0.9697121911037891,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV136",
+   "advertiser_name": "Blue Cruises",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 69000.0,
+   "spend": 67206.72,
+   "attainment": 0.9740104347826087,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV004",
+   "advertiser_name": "Cedar Trips",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 127900.0,
+   "spend": 124761.1,
+   "attainment": 0.9754581704456607,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV134",
+   "advertiser_name": "Echo Tires",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 93500.0,
+   "spend": 91218.13,
+   "attainment": 0.9755949732620322,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV034",
+   "advertiser_name": "Aurora Play",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 761000.0,
+   "spend": 743323.33,
+   "attainment": 0.9767717871222076,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV064",
+   "advertiser_name": "Aurora Home",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 58900.0,
+   "spend": 57543.1,
+   "attainment": 0.9769626485568761,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV037",
+   "advertiser_name": "Summit Market",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 136400.0,
+   "spend": 133495.66,
+   "attainment": 0.9787071847507332,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV105",
+   "advertiser_name": "Union Studios",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 57000.0,
+   "spend": 55927.48,
+   "attainment": 0.9811838596491229,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV112",
+   "advertiser_name": "Atlas Pictures",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 148400.0,
+   "spend": 145632.61,
+   "attainment": 0.981351819407008,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV019",
+   "advertiser_name": "Atlas Getaways",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 239500.0,
+   "spend": 236063.3,
+   "attainment": 0.985650521920668,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV021",
+   "advertiser_name": "Willow Home",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 197800.0,
+   "spend": 195082.6,
+   "attainment": 0.9862618806875633,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV050",
+   "advertiser_name": "Harbor Foods",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 583600.0,
+   "spend": 578264.48,
+   "attainment": 0.9908575736806031,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV017",
+   "advertiser_name": "Echo Motors",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 227600.0,
+   "spend": 225530.56,
+   "attainment": 0.9909075571177505,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV086",
+   "advertiser_name": "Lake Studios",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 101700.0,
+   "spend": 101410.99,
+   "attainment": 0.9971582104228123,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV044",
+   "advertiser_name": "Summit Lending",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 189500.0,
+   "spend": 190688.74,
+   "attainment": 1.0062730343007915,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV122",
+   "advertiser_name": "Willow Pantry",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 583100.0,
+   "spend": 588934.03,
+   "attainment": 1.01000519636426,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV048",
+   "advertiser_name": "Maple Beverage Co.",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 618900.0,
+   "spend": 626274.46,
+   "attainment": 1.011915430602682,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV093",
+   "advertiser_name": "Union Connect",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 58700.0,
+   "spend": 59645.55,
+   "attainment": 1.0161081771720615,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV144",
+   "advertiser_name": "Red Labs",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 123700.0,
+   "spend": 125767.19,
+   "attainment": 1.016711317704123,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV119",
+   "advertiser_name": "Maple Auto Group",
+   "vertical": "Auto",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 567000.0,
+   "spend": 578382.56,
+   "attainment": 1.0200750617283951,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV149",
+   "advertiser_name": "Coastal Rail",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 156300.0,
+   "spend": 159767.69,
+   "attainment": 1.0221861164427384,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV123",
+   "advertiser_name": "Red Market",
+   "vertical": "Retail",
+   "tier": "Enterprise",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 673400.0,
+   "spend": 688859.25,
+   "attainment": 1.0229570092070093,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV090",
+   "advertiser_name": "Atlas Supply",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 208000.0,
+   "spend": 213013.42,
+   "attainment": 1.0241029807692308,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV032",
+   "advertiser_name": "Iron Tires",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 106200.0,
+   "spend": 109040.88,
+   "attainment": 1.0267502824858759,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV145",
+   "advertiser_name": "Echo Beverage Co.",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 268000.0,
+   "spend": 275340.9,
+   "attainment": 1.0273914179104477,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV080",
+   "advertiser_name": "Echo Brands",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 166000.0,
+   "spend": 170914.45,
+   "attainment": 1.0296051204819279,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV106",
+   "advertiser_name": "Iron Records",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 129100.0,
+   "spend": 133080.21,
+   "attainment": 1.0308304415182028,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV011",
+   "advertiser_name": "Iron Insurance",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 93500.0,
+   "spend": 96440.86,
+   "attainment": 1.0314530481283422,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV108",
+   "advertiser_name": "Cedar Supply",
+   "vertical": "Retail",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 602200.0,
+   "spend": 622547.13,
+   "attainment": 1.0337879940219197,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV125",
+   "advertiser_name": "Maple Naturals",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 123300.0,
+   "spend": 127583.95,
+   "attainment": 1.0347441200324412,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV088",
+   "advertiser_name": "Oak Studios",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 65200.0,
+   "spend": 67598.13,
+   "attainment": 1.0367811349693252,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV084",
+   "advertiser_name": "Metro Labs",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 392000.0,
+   "spend": 406505.92,
+   "attainment": 1.0370048979591837,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV027",
+   "advertiser_name": "North Pictures",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 46900.0,
+   "spend": 48636.61,
+   "attainment": 1.0370279317697229,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV092",
+   "advertiser_name": "Golden Records",
+   "vertical": "Entertainment",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 686800.0,
+   "spend": 713808.41,
+   "attainment": 1.039325,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV002",
+   "advertiser_name": "Swift Market",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 204300.0,
+   "spend": 212683.01,
+   "attainment": 1.041032843857073,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV094",
+   "advertiser_name": "Bright Networks",
+   "vertical": "Telecom",
+   "tier": "Enterprise",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 423500.0,
+   "spend": 442666.32,
+   "attainment": 1.0452569539551357,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV045",
+   "advertiser_name": "Swift Bank",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 174900.0,
+   "spend": 182927.33,
+   "attainment": 1.0458966838193253,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV018",
+   "advertiser_name": "Coastal Play",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 622300.0,
+   "spend": 652358.13,
+   "attainment": 1.0483016712196689,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV005",
+   "advertiser_name": "Bright Foods",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 89000.0,
+   "spend": 93646.29,
+   "attainment": 1.0522055056179775,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV063",
+   "advertiser_name": "Golden Outfitters",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 66000.0,
+   "spend": 69529.28,
+   "attainment": 1.0534739393939394,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV003",
+   "advertiser_name": "Juniper Trips",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 90600.0,
+   "spend": 95769.53,
+   "attainment": 1.0570588300220751,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV012",
+   "advertiser_name": "Summit Play",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 165200.0,
+   "spend": 174846.07,
+   "attainment": 1.0583902542372883,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV120",
+   "advertiser_name": "True Beverage Co.",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 431700.0,
+   "spend": 457541.66,
+   "attainment": 1.0598602270094972,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV146",
+   "advertiser_name": "Granite Outfitters",
+   "vertical": "Retail",
+   "tier": "Enterprise",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 1472400.0,
+   "spend": 1561911.68,
+   "attainment": 1.0607930453681065,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV014",
+   "advertiser_name": "Willow Games",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 292300.0,
+   "spend": 310517.61,
+   "attainment": 1.0623250427642832,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV042",
+   "advertiser_name": "Harbor Beverage Co.",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 116200.0,
+   "spend": 123830.4,
+   "attainment": 1.0656660929432014,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV072",
+   "advertiser_name": "Red Bank",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 68600.0,
+   "spend": 73515.89,
+   "attainment": 1.0716602040816325,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV100",
+   "advertiser_name": "Juniper Mobile",
+   "vertical": "Telecom",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 525700.0,
+   "spend": 564355.84,
+   "attainment": 1.0735321285904507,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV010",
+   "advertiser_name": "Prairie Connect",
+   "vertical": "Telecom",
+   "tier": "Enterprise",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 281100.0,
+   "spend": 301797.02,
+   "attainment": 1.073628673070082,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV116",
+   "advertiser_name": "Red Trips",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 62300.0,
+   "spend": 66897.77,
+   "attainment": 1.073800481540931,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV047",
+   "advertiser_name": "Swift Credit Union",
+   "vertical": "Financial Services",
+   "tier": "Enterprise",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 406400.0,
+   "spend": 436545.87,
+   "attainment": 1.0741778297244093,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV030",
+   "advertiser_name": "Metro Lending",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 86400.0,
+   "spend": 92955.61,
+   "attainment": 1.0758751157407407,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV152",
+   "advertiser_name": "Silver Market",
+   "vertical": "Retail",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 319300.0,
+   "spend": 344373.39,
+   "attainment": 1.0785261196367053,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV126",
+   "advertiser_name": "Oak Live",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 163400.0,
+   "spend": 176618.75,
+   "attainment": 1.0808981028151774,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV109",
+   "advertiser_name": "Blue Interactive",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 405500.0,
+   "spend": 439929.81,
+   "attainment": 1.0849070530209617,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV022",
+   "advertiser_name": "Echo Studios",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 171800.0,
+   "spend": 186549.2,
+   "attainment": 1.0858509895227009,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV053",
+   "advertiser_name": "Willow Foods",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 118300.0,
+   "spend": 128940.98,
+   "attainment": 1.0899491124260354,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV117",
+   "advertiser_name": "Copper Motors",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 95700.0,
+   "spend": 104838.65,
+   "attainment": 1.095492685475444,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV056",
+   "advertiser_name": "Atlas Studios",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 138700.0,
+   "spend": 151972.74,
+   "attainment": 1.095693871665465,
+   "status": "On plan"
+  },
+  {
+   "advertiser_id": "ADV076",
+   "advertiser_name": "North Supply",
+   "vertical": "Retail",
+   "tier": "Enterprise",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 509300.0,
+   "spend": 561742.62,
+   "attainment": 1.1029699980365206,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV147",
+   "advertiser_name": "Granite Air",
+   "vertical": "Travel",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 242800.0,
+   "spend": 268848.87,
+   "attainment": 1.1072852965403623,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV071",
+   "advertiser_name": "Pine Mobile",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 69000.0,
+   "spend": 76503.34,
+   "attainment": 1.1087440579710144,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV013",
+   "advertiser_name": "Metro Pictures",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 92200.0,
+   "spend": 102524.29000000001,
+   "attainment": 1.1119771149674622,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV068",
+   "advertiser_name": "Lumen Telecom",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 185500.0,
+   "spend": 207103.77,
+   "attainment": 1.116462371967655,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV091",
+   "advertiser_name": "Aurora EV",
+   "vertical": "Auto",
+   "tier": "Enterprise",
+   "csm_name": "Daniel Osei",
+   "committed_usd": 646000.0,
+   "spend": 721275.28,
+   "attainment": 1.1165252012383902,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV033",
+   "advertiser_name": "Metro Apparel",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 155800.0,
+   "spend": 174785.35,
+   "attainment": 1.121857188703466,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV104",
+   "advertiser_name": "Metro Networks",
+   "vertical": "Telecom",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 148300.0,
+   "spend": 167591.07,
+   "attainment": 1.130081389076197,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV082",
+   "advertiser_name": "Maple EV",
+   "vertical": "Auto",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 141000.0,
+   "spend": 160363.8,
+   "attainment": 1.137331914893617,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV143",
+   "advertiser_name": "River Play",
+   "vertical": "Gaming",
+   "tier": "Enterprise",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 610800.0,
+   "spend": 695309.9400000001,
+   "attainment": 1.1383594302554028,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV085",
+   "advertiser_name": "Coastal Pantry",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 38200.0,
+   "spend": 43685.27,
+   "attainment": 1.1435934554973821,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV058",
+   "advertiser_name": "Maple Supply",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 73200.0,
+   "spend": 83814.12,
+   "attainment": 1.1450016393442621,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV066",
+   "advertiser_name": "Pine Pictures",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 119000.0,
+   "spend": 136610.65,
+   "attainment": 1.1479886554621848,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV028",
+   "advertiser_name": "Cedar Pictures",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 90900.0,
+   "spend": 104863.55,
+   "attainment": 1.1536144114411442,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV131",
+   "advertiser_name": "Metro Pantry",
+   "vertical": "CPG",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 602000.0,
+   "spend": 695694.15,
+   "attainment": 1.1556381229235881,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV124",
+   "advertiser_name": "Willow Lending",
+   "vertical": "Financial Services",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 334600.0,
+   "spend": 388608.08,
+   "attainment": 1.161410878661088,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV067",
+   "advertiser_name": "True Brands",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 166500.0,
+   "spend": 194432.41,
+   "attainment": 1.1677622222222221,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV041",
+   "advertiser_name": "Cedar Goods",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 63000.0,
+   "spend": 74257.63,
+   "attainment": 1.1786925396825398,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV075",
+   "advertiser_name": "Aurora Arcade",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 41400.0,
+   "spend": 48807.8,
+   "attainment": 1.1789323671497585,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV096",
+   "advertiser_name": "True Supply",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 128700.0,
+   "spend": 151914.16,
+   "attainment": 1.1803742035742035,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV107",
+   "advertiser_name": "Copper Pay",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 70400.0,
+   "spend": 85406.82,
+   "attainment": 1.213165056818182,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV038",
+   "advertiser_name": "Summit Foods",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 79700.0,
+   "spend": 97600.64,
+   "attainment": 1.2246002509410288,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV059",
+   "advertiser_name": "Lake Cruises",
+   "vertical": "Travel",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 772300.0,
+   "spend": 954014.96,
+   "attainment": 1.2352906383529716,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV073",
+   "advertiser_name": "Cedar Pantry",
+   "vertical": "CPG",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 46400.0,
+   "spend": 58016.28,
+   "attainment": 1.2503508620689654,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV151",
+   "advertiser_name": "Metro Outfitters",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 144400.0,
+   "spend": 184787.67,
+   "attainment": 1.2796930055401663,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV150",
+   "advertiser_name": "Aurora Hotels",
+   "vertical": "Travel",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 105000.0,
+   "spend": 137151.87,
+   "attainment": 1.3062082857142856,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV133",
+   "advertiser_name": "Lumen Outfitters",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Elena Sokolova",
+   "committed_usd": 82200.0,
+   "spend": 108802.91,
+   "attainment": 1.3236363746958637,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV054",
+   "advertiser_name": "Lake Lending",
+   "vertical": "Financial Services",
+   "tier": "Mid-Market",
+   "csm_name": "Priya Natarajan",
+   "committed_usd": 108200.0,
+   "spend": 145636.29,
+   "attainment": 1.3459915896487986,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV138",
+   "advertiser_name": "Iron Dealers",
+   "vertical": "Auto",
+   "tier": "Enterprise",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 941800.0,
+   "spend": 1337482.06,
+   "attainment": 1.420133850074326,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV077",
+   "advertiser_name": "Swift Records",
+   "vertical": "Entertainment",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 100100.0,
+   "spend": 144723.12,
+   "attainment": 1.4457854145854145,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV025",
+   "advertiser_name": "Pine Insurance",
+   "vertical": "Financial Services",
+   "tier": "Enterprise",
+   "csm_name": "Hana Kim",
+   "committed_usd": 513800.0,
+   "spend": 762808.08,
+   "attainment": 1.4846400934215647,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV043",
+   "advertiser_name": "Blue Studios",
+   "vertical": "Gaming",
+   "tier": "Mid-Market",
+   "csm_name": "Marcus Bell",
+   "committed_usd": 49400.0,
+   "spend": 73591.56,
+   "attainment": 1.4897076923076922,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV069",
+   "advertiser_name": "Lumen Supply",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Hana Kim",
+   "committed_usd": 277400.0,
+   "spend": 422400.7,
+   "attainment": 1.5227134102379236,
+   "status": "Over"
+  },
+  {
+   "advertiser_id": "ADV001",
+   "advertiser_name": "Red Apparel",
+   "vertical": "Retail",
+   "tier": "Mid-Market",
+   "csm_name": "Luis Ortega",
+   "committed_usd": 157800.0,
+   "spend": 242323.72,
+   "attainment": 1.5356382762991128,
+   "status": "Over"
+  }
+ ],
+ "attainment_summary": [
+  {
+   "status": "On plan",
+   "n": 82,
+   "spend": 21473355.22,
+   "committed": 21262500.0
+  },
+  {
+   "status": "Over",
+   "n": 34,
+   "spend": 9813482.83,
+   "committed": 7907100.0
+  },
+  {
+   "status": "Under",
+   "n": 36,
+   "spend": 6725404.42,
+   "committed": 8475300.0
+  }
+ ],
+ "cpa_question": [
+  {
+   "comparison": "All accounts",
+   "auto_cpa": 14.562031630380357,
+   "infeed_cpa": 24.324482237029326,
+   "auto_share_gaming_retail": 0.5373156945098809,
+   "infeed_share_gaming_retail": 0.38487364219587494
+  },
+  {
+   "comparison": "Same account, same week",
+   "auto_cpa": 14.562031630380357,
+   "infeed_cpa": 19.639660590226768,
+   "auto_share_gaming_retail": null,
+   "infeed_share_gaming_retail": null
+  }
+ ],
+ "qbr": [
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "quarter": "2026-Q2",
+   "product": "In-Feed Video",
+   "spend": 277770.73,
+   "impressions": 43515531,
+   "clicks": 467988,
+   "conversions": 15752,
+   "conversion_value": 1046571.92
+  },
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "quarter": "2026-Q2",
+   "product": "Boosted Posts",
+   "spend": 85999.39,
+   "impressions": 16119293,
+   "clicks": 208074,
+   "conversions": 6673,
+   "conversion_value": 455009.24
+  },
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "quarter": "2026-Q2",
+   "product": "Lift Studies",
+   "spend": 21105.1,
+   "impressions": 3358083,
+   "clicks": 33500,
+   "conversions": 1013,
+   "conversion_value": 69576.08
+  },
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "quarter": "2026-Q3",
+   "product": "In-Feed Video",
+   "spend": 276994.02,
+   "impressions": 42885191,
+   "clicks": 465283,
+   "conversions": 15179,
+   "conversion_value": 1065182.42
+  },
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "quarter": "2026-Q3",
+   "product": "Boosted Posts",
+   "spend": 88697.59,
+   "impressions": 16151959,
+   "clicks": 196515,
+   "conversions": 6276,
+   "conversion_value": 420643.91
+  },
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "quarter": "2026-Q3",
+   "product": "Lift Studies",
+   "spend": 21767.24,
+   "impressions": 3490006,
+   "clicks": 35057,
+   "conversions": 1013,
+   "conversion_value": 67985.17
+  },
+  {
+   "advertiser_id": "ADV049",
+   "advertiser_name": "Maple & Main Grocers",
+   "quarter": "2026-Q3",
+   "product": "Auto-Campaigns",
+   "spend": 9491.61,
+   "impressions": 1484254,
+   "clicks": 18441,
+   "conversions": 710,
+   "conversion_value": 47330.37
+  }
+ ],
+ "tests": [
+  {
+   "test_id": "T01",
+   "layer": "raw",
+   "description": "Export has one row per week, advertiser and product",
+   "severity": "error",
+   "failures": 158
+  },
+  {
+   "test_id": "T02",
+   "layer": "staging",
+   "description": "Staged spend has one row per week, advertiser and product",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T03",
+   "layer": "staging",
+   "description": "Spend is positive",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T04",
+   "layer": "staging",
+   "description": "Clicks never exceed impressions",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T05",
+   "layer": "staging",
+   "description": "Conversions never exceed clicks",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T06",
+   "layer": "staging",
+   "description": "Every spend row maps to a known advertiser",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T07",
+   "layer": "staging",
+   "description": "Weeks start on a Monday inside the reporting window",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T08",
+   "layer": "staging",
+   "description": "Every product is in the product catalogue",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T09",
+   "layer": "staging",
+   "description": "No Auto-Campaigns spend before launch",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T10",
+   "layer": "staging",
+   "description": "Sandbox-named accounts are flagged as internal tests",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T11",
+   "layer": "reporting",
+   "description": "Reporting fact excludes internal test accounts",
+   "severity": "error",
+   "failures": 0
+  },
+  {
+   "test_id": "T12",
+   "layer": "staging",
+   "description": "Each PO number belongs to one advertiser",
+   "severity": "warn",
+   "failures": 1
+  },
+  {
+   "test_id": "T13",
+   "layer": "staging",
+   "description": "Invoice-billed spend carries a PO number",
+   "severity": "warn",
+   "failures": 72
+  },
+  {
+   "test_id": "T14",
+   "layer": "staging",
+   "description": "Spend falls inside the dates of the PO it is booked to",
+   "severity": "warn",
+   "failures": 18
+  },
+  {
+   "test_id": "T15",
+   "layer": "staging",
+   "description": "Spend booked to a PO stays within the PO amount",
+   "severity": "warn",
+   "failures": 10
+  },
+  {
+   "test_id": "T16",
+   "layer": "raw",
+   "description": "Weekly client spend moves less than 25% week over week",
+   "severity": "warn",
+   "failures": 1
+  },
+  {
+   "test_id": "T17",
+   "layer": "reporting",
+   "description": "Weekly client spend moves less than 25% week over week",
+   "severity": "warn",
+   "failures": 0
+  }
+ ],
+ "counts": {
+  "client_accounts": 152,
+  "test_accounts": 8,
+  "raw_rows": 8766,
+  "fact_rows": 8264,
+  "pos": 370
+ }
+}

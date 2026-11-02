@@ -1,0 +1,62 @@
+{
+  "auto_funnel": {},
+  "pauses": [
+    "ADV006",
+    "ADV016",
+    "ADV029",
+    "ADV035",
+    "ADV055",
+    "ADV065",
+    "ADV089",
+    "ADV095",
+    "ADV099",
+    "ADV121"
+  ],
+  "duplicate_po": {
+    "po_number": "PO-4108",
+    "advertisers": [
+      "ADV003",
+      "ADV046"
+    ],
+    "replaced": "PO-4219"
+  },
+  "stale_po_accounts": [
+    "ADV037",
+    "ADV042",
+    "ADV062",
+    "ADV149"
+  ],
+  "missing_po_accounts": [
+    "ADV021",
+    "ADV024",
+    "ADV038",
+    "ADV040",
+    "ADV058",
+    "ADV067",
+    "ADV083",
+    "ADV088",
+    "ADV121"
+  ],
+  "harbourline_overspend_accounts": [
+    "ADV001",
+    "ADV025",
+    "ADV043",
+    "ADV054",
+    "ADV059",
+    "ADV069"
+  ],
+  "week17_duplicate_rows": 158,
+  "week17_duplicate_spend": 1189064.73,
+  "test_accounts": [
+    "ADV153",
+    "ADV154",
+    "ADV155",
+    "ADV156",
+    "ADV157",
+    "ADV158",
+    "ADV159",
+    "ADV160"
+  ],
+  "qbr_account": "ADV049",
+  "seed": 20271
+}
