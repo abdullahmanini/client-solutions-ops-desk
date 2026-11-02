@@ -718,5 +718,9 @@ try { if (localStorage.getItem("opsdesk.view") === "desk") view(true); } catch {
 
 /* deep link */
 const h = location.hash.slice(1), hi = CLIPS.findIndex(c => c.id === h);
-if (hi > 0) requestAnimationFrame(() => slots[hi].scrollIntoView({ block: "start" }));
+if (hi > 0) {
+  const jump = () => { feed.style.scrollBehavior = "auto"; feed.scrollTop = slots[hi].offsetTop; feed.style.scrollBehavior = ""; };
+  jump();
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(jump);
+}
 </script>
